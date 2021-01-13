@@ -7,7 +7,7 @@ import AboutPage from "./pages/About"
 import NewsPage from "./pages/News"
 import ProjectsPage from "./pages/Project"
 import WorksPage from "./pages/Works"
-
+ 
 import NavigationBar from "./components/NavigationBar"
 import SocialContainer from "./components/SocialContainer"
 
