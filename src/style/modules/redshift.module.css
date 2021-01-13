@@ -1,0 +1,10 @@
+.cover {
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+
+.textContainer {
+    float: left;
+    max-width: 100%;
+}

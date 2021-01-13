@@ -1,0 +1,69 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.purchase-container {
+    padding: 10px;
+    margin: 50% auto;
+
+    max-width: 400px;
+    max-height: 80%;
+    overflow: scroll;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    position: relative;
+    border-top: 5px solid #ffc439;
+    border-bottom: 5px solid #ffc439;
+
+    /* Center vertically */
+    margin-top: 50vh;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.purchase-container h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.purchase-container p {
+    padding: 0 50px;
+}
+
+.approved-email {
+    text-align: center;
+}
+
+.approved-email {
+    color: var(--dark-grey)
+}
+
+.email-address {
+    color: rgb(90, 98, 122);
+    word-break: break-word;
+}
+
+
+.purchase-exit-button .transparent-icon {
+    width: 40px;
+}
+
+.purchase-exit-button {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+#smart-button-container {
+    min-height: 220px;
+    position: relative;
+}
