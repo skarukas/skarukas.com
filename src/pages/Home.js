@@ -65,6 +65,7 @@ export default class HomePage extends React.Component {
         
     }
     render() {
+        document.title = "Stephen Karukas - Home"
         return <div id="canvas"></div>
     }
 }

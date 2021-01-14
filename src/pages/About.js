@@ -33,6 +33,8 @@ import "../style/About.css"
 } */
 
 export default function AboutPage() {
+    document.title = "Stephen Karukas - About"
+    
     return (
         <div id="about-page">
             <div className="bio-container">

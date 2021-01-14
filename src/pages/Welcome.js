@@ -21,6 +21,7 @@ export default class WelcomePage extends React.Component {
         }
     }
     render() {
+        document.title = "Stephen Karukas"
         return (
             <div id="welcome-page">
                 <div className="welcome-content">

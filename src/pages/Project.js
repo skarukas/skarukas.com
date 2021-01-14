@@ -7,9 +7,10 @@ const visitAppIcon = "img/open-link-icon.png"
 
 /* Display the list of CS projects */
 export default class ProjectsPage extends React.Component {
-    state = { data: projectsData}
+    state = { data: projectsData} 
 
     render() {
+        document.title = "Stephen Karukas - Projects"
         if (!this.state.data) return this.props.fallback || null
         else return (
             <div id="projects-page">

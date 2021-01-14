@@ -29,6 +29,7 @@ export default class WorksPage extends React.Component {
     }
 
     render() {
+        document.title = "Stephen Karukas - Works"
         if (!this.state.data) return this.props.fallback || null
         else return (
             <div id="works-page">

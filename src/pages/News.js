@@ -23,6 +23,7 @@ export default class NewsPage extends React.Component {
         }
     }
     render() {
+        document.title = "Stephen Karukas - News"
         let byDateDescending = (a, b) => (b.date.getTime() || 0) - (a.date.getTime() || 0)
         return (
             <div id="news-page">
