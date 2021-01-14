@@ -1,3 +1,9 @@
+#projects-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-container {
     padding: 0px;
     overflow: hidden;

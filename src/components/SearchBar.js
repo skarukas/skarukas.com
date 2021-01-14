@@ -12,8 +12,7 @@ export default function SearchBar(props) {
                 className="search-bar"
                 placeholder="Filter by keyword..."
                 onInput={onInput}
-                defaultValue={urlFilter}
-                autoFocus/>
+                defaultValue={urlFilter}/>
         </div>
     )
 }

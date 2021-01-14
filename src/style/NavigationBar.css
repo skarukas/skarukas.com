@@ -30,6 +30,7 @@
 }
 
 #navbar img {
+    display: none;
     float: left;
     height: 35px;
     padding-left: 10px;
@@ -37,6 +38,7 @@
 }
 
 #nav-title {
+    display: none;
     position: absolute;
     left: 0px;
     padding: 10px;

@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import $ from "jquery"
 
 import "../style/NavigationBar.css"
@@ -34,9 +34,9 @@ export default class NavigationBar extends React.Component {
         return (
             <div id="navbar">
                 <div id="navbar-pages">
-                    {this.props.pages.map(page => <NavLink to={page.path} activeClassName="navbar-selected" key={page.name}>{page.name}</NavLink>)}
+                    {this.props.pages.map(page => <NavLink to={page.path} exact activeClassName="navbar-selected" key={page.name}>{page.name}</NavLink>)}
                 </div>
-                <img src="img/signature.png" alt="Site logo"/>
+                <Link to="/"><img src="img/signature.png" alt="Site logo"/></Link>
                 <span id="nav-title">stephen karukas</span>
             </div>
         )

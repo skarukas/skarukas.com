@@ -1,0 +1,52 @@
+#welcome-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-background {
+    height: 100%;
+    filter: brightness(20%);
+}
+
+.welcome-content {
+    opacity: 0;
+}
+
+.welcome-content * {
+    text-align: center;
+}
+
+.welcome-image {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    filter: saturate(60%);
+}
+/* 
+.welcome-secondary-image {
+    position: absolute;
+    filter: saturate(30%);
+}
+
+.welcome-secondary-image:nth-child(1) {
+    right: 10%;
+    top: 10%;
+    width: 20%;
+    max-width: 100px;
+}
+
+
+.welcome-secondary-image:nth-child(2) {
+    left: 10%;
+    top: 50%;
+    width: 20%;
+    max-width: 100px;
+} */

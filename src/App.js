@@ -3,6 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import $ from "jquery"
 
 import HomePage from "./pages/Home"
+import WelcomePage from "./pages/Welcome"
 import AboutPage from "./pages/About"
 import NewsPage from "./pages/News"
 import ProjectsPage from "./pages/Project"
@@ -26,7 +27,6 @@ const pages = [
     new Page("news",  "/news",  NewsPage),
     new Page("about", "/about", AboutPage),
 ]
-const InitialPage = AboutPage
 
 
 
@@ -57,10 +57,10 @@ class App extends React.Component {
         return (
             <HashRouter basename='/'>
                 <div id="background"></div>
-                <NavigationBar pages={pages} selected={InitialPage}/>
+                <NavigationBar pages={pages} />
                 <SocialContainer />
                 <div id="content">
-                    <Route exact path="/" component={InitialPage}/>
+                    <Route exact path="/" component={WelcomePage}/>
                     {pages.map(page => <Route path={page.path} key={page.name} component={page.component} />)}
                 </div>
                 <div id="footer"></div>
