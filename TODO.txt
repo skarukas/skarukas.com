@@ -6,21 +6,21 @@
 /- add filter query for news
 /- set up actual paypal business thing, make sure alert for item comes in
 /- add linkable id's for news
+/- paypal button not working on mobile (?)
+/- use production react
+/- change title when navigating pages
 
 IMPORTANT
 - edit bio yuck
-- use production react
 
 ISSUES
 - make sure hover things work for mobile
 - fix the href thing
 - make page scroll back up after page navigation
 - fix background image repeating
-- paypal button not working on mobile (?)
 
 FEATURES
 - add groups for "list" pages
-- change title when navigating pages
 - add header to each page
 
 CONTENT

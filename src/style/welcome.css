@@ -55,6 +55,12 @@
 .welcome-links-container {
     opacity: 0;
     padding: 20px;
+    padding-top: 30px;
+    font-size: 0.9em;
+}
+
+.welcome-links-container h4 {
+    margin: 0;
 }
 
 .welcome-links a {

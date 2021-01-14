@@ -38,6 +38,7 @@ export default class WelcomePage extends React.Component {
                     <h3>stephen karukas</h3>
                     <div className="welcome-subtitle">music, etc.</div>
                     <div className="welcome-links-container">
+                        <h4 style={{color: "grey"}}>external links</h4>
                         <hr/>
                         <div className="welcome-links">
                             <p><a id="welcome-beats" href="https://www.instagram.com/p/CJ7PGy0gyqa/" target="_blank">watch me play beats</a></p>
