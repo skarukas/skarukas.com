@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/skarukas.com/static/css/main.61fc8fde.chunk.css",
-    "main.js": "/skarukas.com/static/js/main.30deb484.chunk.js",
-    "main.js.map": "/skarukas.com/static/js/main.30deb484.chunk.js.map",
-    "runtime-main.js": "/skarukas.com/static/js/runtime-main.3c319899.js",
-    "runtime-main.js.map": "/skarukas.com/static/js/runtime-main.3c319899.js.map",
-    "static/js/2.085b101d.chunk.js": "/skarukas.com/static/js/2.085b101d.chunk.js",
-    "static/js/2.085b101d.chunk.js.map": "/skarukas.com/static/js/2.085b101d.chunk.js.map",
-    "static/js/3.a70d80e1.chunk.js": "/skarukas.com/static/js/3.a70d80e1.chunk.js",
-    "static/js/3.a70d80e1.chunk.js.map": "/skarukas.com/static/js/3.a70d80e1.chunk.js.map",
-    "index.html": "/skarukas.com/index.html",
-    "static/css/main.61fc8fde.chunk.css.map": "/skarukas.com/static/css/main.61fc8fde.chunk.css.map",
-    "static/js/2.085b101d.chunk.js.LICENSE.txt": "/skarukas.com/static/js/2.085b101d.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.61fc8fde.chunk.css",
+    "main.js": "/static/js/main.30deb484.chunk.js",
+    "main.js.map": "/static/js/main.30deb484.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7a73f6a2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7a73f6a2.js.map",
+    "static/js/2.085b101d.chunk.js": "/static/js/2.085b101d.chunk.js",
+    "static/js/2.085b101d.chunk.js.map": "/static/js/2.085b101d.chunk.js.map",
+    "static/js/3.a70d80e1.chunk.js": "/static/js/3.a70d80e1.chunk.js",
+    "static/js/3.a70d80e1.chunk.js.map": "/static/js/3.a70d80e1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.61fc8fde.chunk.css.map": "/static/css/main.61fc8fde.chunk.css.map",
+    "static/js/2.085b101d.chunk.js.LICENSE.txt": "/static/js/2.085b101d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3c319899.js",
+    "static/js/runtime-main.7a73f6a2.js",
     "static/js/2.085b101d.chunk.js",
     "static/css/main.61fc8fde.chunk.css",
     "static/js/main.30deb484.chunk.js"
