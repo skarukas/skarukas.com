@@ -26,6 +26,13 @@ const projectsData = [
         "image": "tune.png"
     },
     {
+        "title": "lattice search",
+        "description": "A web app for automatic interval approximation using an arbitrary set of basis intervals. It essentially finds optimal mappings from points in 1D pitch space to those in a multidimensional tuning lattice.",
+        "appURL": "https://skarukas.github.io/lattice-search/",
+        "repo": "https://github.com/skarukas/lattice-search",
+        "image": "lattice-story.png"
+    },
+    {
         "title": "xen",
         "description": "A high-level, interpreted language for analyzing and operating upon musical pitch structures within the context of xenharmonic microtonal theory.",
         "appURL": "https://skarukas.github.io/xen/",

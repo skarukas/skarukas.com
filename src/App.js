@@ -1,9 +1,10 @@
 import React from "react";
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import $ from "jquery"
 
 import HomePage from "./pages/Home"
 import WelcomePage from "./pages/Welcome"
+import EternalNothingness from "./pages/EternalNothingness"
 import AboutPage from "./pages/About"
 import NewsPage from "./pages/News"
 import ProjectsPage from "./pages/Project"
@@ -60,8 +61,11 @@ class App extends React.Component {
                 <NavigationBar pages={pages} />
                 <SocialContainer />
                 <div id="content">
-                    <Route exact path="/" component={WelcomePage}/>
-                    {pages.map(page => <Route path={page.path} key={page.name} component={page.component} />)}
+                    <Switch>
+                        <Route exact path="/" component={WelcomePage}/>
+                        {pages.map(page => <Route path={page.path} key={page.name} component={page.component} />)}
+                        <Route component={EternalNothingness}/>
+                    </Switch>
                 </div>
                 <div id="footer"></div>
             </HashRouter>

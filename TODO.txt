@@ -5,6 +5,7 @@
 /- fix three shades thing, how to specify instrument
 /- add filter query for news
 /- set up actual paypal business thing, make sure alert for item comes in
+/- add linkable id's for news
 
 IMPORTANT
 - edit bio yuck
@@ -15,9 +16,9 @@ ISSUES
 - fix the href thing
 - make page scroll back up after page navigation
 - fix background image repeating
+- paypal button not working on mobile (?)
 
 FEATURES
-- add linkable id's for news
 - add groups for "list" pages
 - change title when navigating pages
 - add header to each page

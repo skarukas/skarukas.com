@@ -1,0 +1,26 @@
+#eternity {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 666;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eternal-center-container {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+.eternal-center-container p {
+    opacity: 0;
+    padding: 5px;
+}
