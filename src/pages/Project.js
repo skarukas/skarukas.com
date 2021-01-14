@@ -25,7 +25,6 @@ export default class ProjectsPage extends React.Component {
 function Project(props) {
     let proj = props.data
     let linkURL = proj.appURL || proj.repo || "#";
-    console.log(proj.image)
 
     return (
         <li className="project" key={proj.title}>
