@@ -1,0 +1,22 @@
+.pdf-container {
+    width: 100px;
+    margin: 10px;
+    float: left;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.pdf-container:hover {
+    opacity: 1;
+}
+
+.pdf-container img {
+    margin: 10px 25px;
+    width: 50px;
+}
+
+.pdf-container p {
+    color: black;
+    margin: 0px;
+    text-align: center;
+}

@@ -15,6 +15,10 @@
     background: rgb(121, 120, 120);
 }
 
+#navbar-pages {
+    z-index: 10;
+}
+
 #navbar-pages a {
     cursor: pointer;
     float: right;
@@ -30,11 +34,18 @@
 }
 
 #navbar img {
+    position: absolute;
     display: none;
-    float: left;
+
     height: 35px;
     padding-left: 10px;
-    filter: invert(1)
+    filter: invert(1);
+}
+
+#home-icon {
+    padding: 8px;
+    height: 25px !important;
+    opacity: 0.7
 }
 
 #nav-title {
