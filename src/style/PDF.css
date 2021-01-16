@@ -2,7 +2,7 @@
     width: 100px;
     margin: 10px;
     float: left;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0.3s;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .pdf-container p {
-    color: black;
+    color: white;
     margin: 0px;
     text-align: center;
 }

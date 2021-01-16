@@ -10,7 +10,9 @@ export default class AboutPage extends React.Component {
         $('#about-page a').attr('target', "_blank").addClass('hover-anchor')
         $('.about-section-content').hide()
         $('.about-section button').on('click', event => {
-            let $elem = $(event.target).siblings('.about-section-content').slideToggle()
+            let $elem = $(event.target)
+                .siblings('.about-section-content')
+                .animate({opacity: 'toggle', height: 'toggle'})
             /* $('.about-section-content').not($elem).slideUp() */
         })
     }
@@ -20,7 +22,7 @@ export default class AboutPage extends React.Component {
         return (
             <div id="about-page">
                 <div className="bio-container">
-                    <img className="bio-image" src="img/karukas-image.jpg" alt="Stephen Karukas in IU electronic music studio"/>
+                    <img className="bio-image" src="img/i-exist-no-saturation.png" alt="Stephen Karukas in IU electronic music studio"/>
                     <CompositionBio />
                     <PercussionBio />
                     <Microtonal />

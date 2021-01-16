@@ -11,8 +11,8 @@
     left: 0px;
     padding: 0px;
     width: 100%;
-    opacity: 0.9;
-    background: rgb(121, 120, 120);
+    opacity: 1;
+    background: rgb(102, 102, 102);
 }
 
 #navbar-pages {
@@ -26,7 +26,6 @@
     color: #ffffff;
     opacity: 0.6;
     transition: opacity 0.2s;
-    border-bottom: 4px solid rgb(149, 175, 233, 0);
 }
 
 #navbar-pages a:hover {

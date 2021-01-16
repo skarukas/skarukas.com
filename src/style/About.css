@@ -6,19 +6,20 @@
 }
 
 .bio-container {
-    background-color:rgb(255, 255, 255, 0.6);
+    background-color: rgb(0, 0, 0, 0.9);
     border-left: 5px solid;
     border-right: 5px solid;
-    border-color: #b86464;
+    border-color: #9c0000;
     padding: 10px;
     width: calc(100% - 30px);
     min-height: calc(100vh - 60px);
     float: left;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .bio-image {
-    max-width: 200px;
-    margin: 20px calc(50% - 100px);
+    width: 100%;
+    margin: 0;
 }
 
 
@@ -46,28 +47,28 @@
 .about-section-content {
     font-size: 0.9em;
     display: none;
-    color: var(--dark-grey);
+    color: white;
     overflow: hidden;
 }
 
 
-.about-section:nth-child(2) {
-    border-top: 2px solid grey;
+/* .about-section:nth-child(2) {
+    border-top: 2px solid rgb(255, 255, 255, 0.5);
 }
-
+ */
 .about-section {
     position: relative;
     padding: 10px;
     border-radius: 0px;
-
-    border-bottom: 2px solid grey;
     
-    background:rgba(153, 153, 153, 0.35);
-    background: rgb(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+    
+
 }
 
 .about-section * {
-    border-radius: none;
+    color: white;
+    border-radius: 0;
 }
 
 .about-section button {
@@ -90,4 +91,10 @@
     right: 10px;
     font-size: 0.5em;
     top: 12px;
+    filter: invert();
+}
+
+.about-section .hover-anchor, .about-section .hover-anchor em {
+    font-weight: 700;
+    color:rgb(64, 212, 238) !important;
 }

@@ -19,11 +19,13 @@ export default class PurchaseModal extends React.Component {
             $('#paypal-button-container').empty().hide()
             $('.modal-container').hide().fadeIn()
             $(".purchase-details").hide().slideDown(() => {
-                this.showPayPalButtons(this.state.item.price, '#paypal-button-container')
-                    .then(() => {
-                        $('.loader-container').fadeOut()
-                        $('#paypal-button-container').fadeIn()
-                    })
+                if ($('#paypal-button-container')) {
+                    this.showPayPalButtons(this.state.item.price, '#paypal-button-container')
+                        .then(() => {
+                            $('.loader-container').fadeOut()
+                            $('#paypal-button-container').fadeIn()
+                        }).catch(ø => ø)
+                }
             })
         }
     }
