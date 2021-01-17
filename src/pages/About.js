@@ -15,6 +15,18 @@ export default class AboutPage extends React.Component {
                 .animate({opacity: 'toggle', height: 'toggle'})
             /* $('.about-section-content').not($elem).slideUp() */
         })
+
+        /* Set default theme */
+        let theme = 'light';
+        $('.about-section, .bio-container, .click-hide').addClass(theme)
+        $(".bio-image.light").show()
+        $(".bio-image.dark").hide()
+        $('.bio-image-container').on('click', () => {
+            $('.bio-image').fadeToggle(1000)
+            let newTheme = (theme == 'light')? 'dark' : 'light'
+            $('.' + theme).removeClass(theme).addClass(newTheme)
+            theme = newTheme;
+        })
     }
 
     render() {
@@ -22,7 +34,11 @@ export default class AboutPage extends React.Component {
         return (
             <div id="about-page">
                 <div className="bio-container">
-                    <img className="bio-image" src="img/i-exist-no-saturation.png" alt="Stephen Karukas in IU electronic music studio"/>
+                    <div className="bio-image-container">
+                        <img className="bio-image light" src="img/about-pic-light.png" alt="Stephen Karukas existing on a couch"/>
+                        <img className="bio-image dark" src="img/about-pic-dark.png" alt="Stephen Karukas having an existential crisis on a couch"/>
+                    </div>
+
                     <CompositionBio />
                     <PercussionBio />
                     <Microtonal />
