@@ -35,8 +35,8 @@ export default class AboutPage extends React.Component {
             <div id="about-page">
                 <div className="bio-container">
                     <div className="bio-image-container">
-                        <img className="bio-image light" src="img/about-pic-light.png" alt="Stephen Karukas existing on a couch"/>
-                        <img className="bio-image dark" src="img/about-pic-dark.png" alt="Stephen Karukas having an existential crisis on a couch"/>
+                        <img className="bio-image light" src="img/about-pic-light.jpg" alt="Stephen Karukas existing on a couch"/>
+                        <img className="bio-image dark" src="img/about-pic-dark.jpg" alt="Stephen Karukas having an existential crisis on a couch"/>
                     </div>
 
                     <CompositionBio />

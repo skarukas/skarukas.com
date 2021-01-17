@@ -18,6 +18,7 @@ ISSUES
 - fix the href thing
 - make page scroll back up after page navigation
 - fix background image repeating
+- long load time for about images
 
 FEATURES
 - add groups for "list" pages
