@@ -49,7 +49,7 @@ const newsData = [
         date: new Date(2021, 0, 13),
         content: (
             <div className={hutchens2021.main}>
-                <img src="img/hutchens-myers.png" alt="Background" className={hutchens2021['background']}></img>
+                <img src="img/hutchens-myers.jpg" alt="Background" className={hutchens2021['background']}></img>
                 <div className={hutchens2021.text}> 
                     <p>
                         I have had the great fortune in the past to collaborate with <a href="https://www.andrew-hutchens.com/bio">Andrew Hutchens</a>, 
@@ -110,7 +110,7 @@ const newsData = [
         tags: ['commission', 'music', 'solo', 'percussion', 'marimba'],
         content: (
             <div>
-                <img src="img/covers/redshift.png" alt="Redshift cover" className={redshift.cover}></img>
+                <img src="img/covers/redshift.jpg" alt="Redshift cover" className={redshift.cover}></img>
                 <div className={redshift.textContainer}>
                     <p>
                         I just finished a new work for solo marimba, <em>Redshift</em>, for a consortium 

@@ -1,5 +1,4 @@
 .loader-container {
-    z-index: 99;
     position: absolute;
     left: calc(50% - 50px);
     top: calc(50% - 10px);

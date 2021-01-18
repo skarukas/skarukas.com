@@ -44,7 +44,7 @@ const worksData = [
         "description": "",
         "tags": ["solo", "fast", "difficult"],
         "duration": "7 minutes",
-        "image": "redshift.png",
+        "image": "redshift.jpg",
         "purchase": false,
         "audio": ""
 
@@ -58,7 +58,7 @@ const worksData = [
         "tags": ["solo", "slow", "quiet", "soft"],
         "description": "<em>blue-gray</em> is a delicate and expressive piece for marimba with melodic layers that weave in and out of each other, giving the performer many opportunities to shape the music. Moments of extremely soft dynamics create a fragile stillness that is intensified by large leaps in register, to be performed very quickly and softly. It received the Honorable Mention in the 2019 Percussive Arts Society Composition Contest.",
         "duration": "5 1/2 minutes",
-        "image": "blue-gray.png",
+        "image": "blue-gray.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
             "price": 20
@@ -75,7 +75,7 @@ const worksData = [
         "tags": ["solo", "medium"],
         "description": "<em>Deep Beneath the Ice</em> was written in January 2015 at Interlochen Arts Academy. In the warmer months of the year, I would sit by Green Lake on campus and enjoy being so close to nature. In winter, the lake would freeze over, sealing all life beneath a layer of ice. Similarly, the far-below freezing temperatures would keep all of the students inside. While trapped inside a practice room, I composed this piece as a reminder that even in isolation, life exists as active as ever.",
         "duration": "6 minutes",
-        "image": "deep-beneath-the-ice.png",
+        "image": "deep-beneath-the-ice.jpg",
         "purchase": {
             "publisher": "C. Alan",
             "link": "http://c-alanpublications.com/deep-beneath-the-ice/"
@@ -156,7 +156,7 @@ const worksData = [
         "instrumentationLong": "kick drum, bass drum, 2 toms, snare drum, bongos, brake drum, large sizzle cymbal",
         "description": "Designed to evoke images of primitive life, <em>To Live and Die in the Wild</em> utilizes a range of sounds, including intense ritual drumming, intricate polyrhythmic cells, and weeping, howling effects made possible by fading between different drums and rolling on the very edge of the bass drum. Each section of the piece represents a different terror that could mean life or death for a creature without shelter.",
         "duration": "4 to 10 minutes (movements are modular)",
-        "image": "to-live-and-die.png",
+        "image": "to-live-and-die.jpg",
         "purchase": {
             "publisher": "C. Alan",
             "link": "http://c-alanpublications.com/to-live-and-die-in-the-wild/"
@@ -172,7 +172,7 @@ const worksData = [
         "instrumentationLong": "4 timpani (32\", 29\", 26\", 23\")",
 
         "duration": "7 minutes",
-        "image": "bad-number.png",
+        "image": "bad-number.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
             "price": 20
@@ -188,7 +188,7 @@ const worksData = [
         "instrumentationLong": "5.0 octave marimba (shared), vibraphone, bass drum, crotales (2 octaves), wind chimes, 32\" & 26\" timpani, 2 bows",
 
         "duration": "11 minutes",
-        "image": "presence.png",
+        "image": "presence.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
             "price": 25
@@ -204,7 +204,7 @@ const worksData = [
         "instrumentationLong": "4.0 octave marimba, 4.0 octave marimba, 5.0 octave marimba (shared)",
 
         "duration": "6 minutes",
-        "image": "i-am-electric.png",
+        "image": "i-am-electric.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
             "price": 20,
@@ -221,7 +221,7 @@ const worksData = [
         "instrumentationLong": "2 violins, viola, cello",
 
         "duration": "11 minutes",
-        "image": "harmonic-motion.png",
+        "image": "harmonic-motion.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
             "price": 20
@@ -237,7 +237,7 @@ const worksData = [
         "instrumentationLong": "alto saxophone, 5.0 octave marimba",
         "description": "Expressively textural in one moment and relentlessly groovy in the next, <em>It flows</em> is a challenging and varied work for marimba and alto saxophone that includes polyrhythmic textures, exciting hocketed lines, and soaring saxophone melodies. The constantly evolving harmony and texture keeps the piece fun for both performers and audience.",
         "duration": "9 minutes",
-        "image": "it-flows.png",
+        "image": "it-flows.jpg",
         "purchase": {
             "publisher": "C. Alan",
             "link": "http://c-alanpublications.com/it-flows/"
@@ -305,7 +305,7 @@ const worksData = [
         "duration": "9 minutes",
         "image": "in-a-breath.png",
         "purchase": "contact",
-        "audio": "in-a-breath.mp3",
+        "audio": "in-a-breath.mp3", 
         "video": "https://www.youtube.com/watch?v=8FYA5os0CYs"
     }
 ]

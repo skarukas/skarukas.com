@@ -27,10 +27,10 @@ export default class WelcomePage extends React.Component {
                 <div className="welcome-content">
                     <Link to="/about">
                         <div className="welcome-image-container">
-                            <img className="welcome-image image-selected" src="img/welcome-img/beer.png"/>
-                            <img className="welcome-image" src="img/welcome-img/beats.png"/>
-                            <img className="welcome-image" src="img/welcome-img/it-flows2.png"/>
-                            <img className="welcome-image" src="img/welcome-img/scriabin.png"/>
+                            <img className="welcome-image image-selected" src="img/welcome-img/beer.jpg"/>
+                            <img className="welcome-image" src="img/welcome-img/beats.jpg"/>
+                            <img className="welcome-image" src="img/welcome-img/it-flows.jpg"/>
+                            <img className="welcome-image" src="img/welcome-img/scriabin.jpg"/>
                             <img className="welcome-image" src="img/springs.png"/>
                         </div>
                     </Link>

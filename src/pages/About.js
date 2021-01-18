@@ -2,6 +2,7 @@ import React from "react";
 import $ from "jquery"
 import "../style/About.css"
 import PDF from "../components/PDF"
+import Loader from "../components/Loader"
 
 export default class AboutPage extends React.Component {
 
@@ -35,6 +36,7 @@ export default class AboutPage extends React.Component {
             <div id="about-page">
                 <div className="bio-container">
                     <div className="bio-image-container">
+                        <Loader style={{zIndex: -1}}/>
                         <img className="bio-image light" src="img/about/about-pic-light-progressive.jpg" alt="Stephen Karukas existing on a couch"/>
                         <img className="bio-image dark" src="img/about/about-pic-dark-progressive.jpg" alt="Stephen Karukas having an existential crisis on a couch"/>
                     </div>
@@ -50,7 +52,7 @@ export default class AboutPage extends React.Component {
     }
 }
 
-
+ 
 /* Bio Sections */
 const hideIcon = <img className="transparent-icon click-hide" alt="Expand down icon" src="img/expand-down-icon.png" />
 

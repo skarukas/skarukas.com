@@ -23,6 +23,7 @@ ISSUES
 FEATURES
 - add groups for "list" pages
 - add header to each page
+- make all images progressive JPGs
 
 CONTENT
 - add lattice search in code
