@@ -124,7 +124,10 @@ class Work extends React.Component {
                 <div className="toggle-details">
                     <img className="work-cover" 
                          alt={"Cover for " + work.title}
-                         src={"img/covers/" + work.image} />
+                         src={"img/covers/" + work.image} 
+                         width="200"
+                         height="258"
+                         />
                     <div>
                         <div className="work-description"
                             dangerouslySetInnerHTML={{__html: work.description || '<em>Description coming soon.</em>'}}>
