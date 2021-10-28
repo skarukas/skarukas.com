@@ -41,12 +41,15 @@ const worksData = [
         "year": "2020",
         "instrumentationShort": "marimba",
         "instrumentationLong": "5.0 octave marimba",
-        "description": "",
+        "description": `<em>Redshift</em> is a "moto perpetuo" style marimba solo in which flowing passages and sparkling melodies give way to deviations, progressively shifting the piece into new soundworlds. Metric modulations and added/subtracted beats keep the piece always moving forward in unexpected ways.</br></br>This piece was written for a consortium commission led by Josh Fulford, which included percussionists Robert Clayson, Zachary Cook, Joe Kulick, Cameron Leach, Chin-Li Sophia Lo, Paul Millette, and Russell Wharton.`,
         "tags": ["solo", "fast", "difficult"],
         "duration": "7 minutes",
         "image": "redshift.jpg",
-        "purchase": false,
-        "audio": ""
+        "purchase": {
+            "publisher": "Stephen Karukas",
+            "price": 20
+        },
+        "audio": "redshift.mp3"
 
     },
     {
@@ -142,8 +145,8 @@ const worksData = [
         "duration": "7 minutes",
         "image": "elements.png",
         "purchase": {
-            "publisher": "Stephen Karukas",
-            "price": 20
+            "publisher": "Pocket Publications",
+            "link": "https://www.pocketpublications.com/product-page/elements-karukas-multi-perc-solo"
         },
         "audio": "elements.mp3",
         "video": "https://www.youtube.com/watch?v=-PkxxZL5Hqo"
@@ -179,6 +182,23 @@ const worksData = [
         }
 
 
+    },
+    {
+        "id": "optimal-damage",
+        "title": "Optimal Damage",
+        "year": "2021",
+        "instrumentationShort": "percussion quartet",
+        "instrumentationLong": "bongos, med. wood block, small cym. low woodblock, snare, kick drum, crash, 3 toms, hi-hat",
+        "description": "Description Coming Soon",
+
+        "duration": "6 minutes",
+        "image": "optimal-damage.jpg",
+        "purchase": {
+            "publisher": "Stephen Karukas",
+            "price": 20
+        },
+        "audio": "optimal-damage.mp3",
+        "video": "https://www.youtube.com/watch?v=cv6uBLnkAw4"
     },
     {
         "id": "presence",
@@ -245,6 +265,40 @@ const worksData = [
         "audio": "it-flows.mp3",
         "video": "https://www.youtube.com/watch?v=yiPUJJI4le4"
     },
+    {
+        "id": "third-rail",
+        "title": "Third Rail / Revelation",
+        "year": "2021",
+        "instrumentationShort": "bass clarinet, bari sax, marimba, and piano",
+        "instrumentationLong": "bass clarinet, bari sax, marimba (5.0 octave), piano",
+        "description": "Description Coming Soon",
+
+        "duration": "7 minutes",
+        "image": "third-rail.jpg",
+/*         "purchase": {
+            "publisher": "Stephen Karukas",
+            "price": 20
+        }, */
+        "audio": "third-rail.mp3"
+
+    },
+    /* {
+        "id": "material",
+        "title": "Material",
+        "year": "2021",
+        "instrumentationShort": "trumpet and percussion quartet",
+        "instrumentationLong": "trumpet and percussion quartet",
+        "description": "Description Coming Soon",
+
+        "duration": "7 minutes",
+        "image": "material.jpg",
+        "purchase": {
+            "publisher": "Stephen Karukas",
+            "price": 20
+        },
+
+
+    }, */
     {
         "id": "three-shades-violin",
         "title": "Three Shades of Sun",

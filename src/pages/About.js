@@ -43,6 +43,7 @@ export default class AboutPage extends React.Component {
 
                     <CompositionBio />
                     <PercussionBio />
+                    <Tech />
                     <Microtonal />
                     <CheckOut />
                     <Materials />
@@ -129,8 +130,11 @@ function CompositionBio() {
     return (
         <div className="about-section">
             {hideIcon}
-            <button>composition bio</button>
+            <button>composition</button>
             <div className="about-section-content">
+                <h3>
+                    Professional Bio
+                </h3>
                 <p>
                     Stephen Karukas is a recent graduate of the Indiana University Jacobs School 
                     of Music, where he received degrees in music composition and percussion 
@@ -169,8 +173,11 @@ function PercussionBio() {
     return (
         <div className="about-section">
             {hideIcon}
-            <button>percussion bio</button>
+            <button>percussion</button>
             <div className="about-section-content">
+                <h3>
+                    Professional Bio
+                </h3>
                 <p>
                     Stephen Karukas is a recent graduate of the Indiana University Jacobs School 
                     of Music, where he received degrees in music composition and percussion 
@@ -200,6 +207,24 @@ function PercussionBio() {
                     He also maintains a <a href="https://www.youtube.com/c/StephenKarukas">YouTube Channel </a> 
                     of his performances and compositions, including a 2018 project arranging and recording 
                     selected Poemes and Preludes of Alexander Scriabin for solo marimba.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+function Tech() {
+    return (
+        <div id="about-tech" className="about-section">
+            {hideIcon}
+            <button>tech</button>
+            <div className="about-section-content">
+                <p>
+                    Since 2020, I have spent a large amount of my time working in computer science. 
+                    I did my masters at IU focusing on artificial intelligence, and I
+                    worked as an associate instructor (teaching assistant) in the CS department
+                    for graduate classes on algorithms and AI.
+                    I also worked as a software engineering intern for Amazon in summer 2021.
                 </p>
             </div>
         </div>

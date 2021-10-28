@@ -18,7 +18,7 @@
 
 .welcome-content {
     opacity: 0;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .welcome-content * {

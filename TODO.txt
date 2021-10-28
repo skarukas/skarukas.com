@@ -9,6 +9,9 @@
 /- paypal button not working on mobile (?)
 /- use production react
 /- change title when navigating pages
+/- make linkable from facebook....
+/- add tech bio/info
+/- update resumes
 
 IMPORTANT
 - edit bio yuck
@@ -20,6 +23,7 @@ ISSUES
 - fix background image repeating
 - long load time for about images
 
+
 FEATURES
 - add groups for "list" pages
 - add header to each page
@@ -29,3 +33,5 @@ CONTENT
 - add lattice search in code
 - add more news events
 - use diff bio
+- create description for optimal damage
+- do something with video?

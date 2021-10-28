@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import $ from "jquery"
 
-import HomePage from "./pages/Home"
+//import HomePage from "./pages/Home"
 import WelcomePage from "./pages/Welcome"
 import EternalNothingness from "./pages/EternalNothingness"
 import AboutPage from "./pages/About"
@@ -29,7 +29,14 @@ const pages = [
     new Page("about", "/about", AboutPage),
 ]
 
-
+window.removeExternalParams = function() {
+    // remove params that come before hash (#), for example fbclid
+    let splitUrl = window.location.href.split("#")
+    let rest = splitUrl[splitUrl.length-1]
+    let origin = window.location.origin
+    let url = origin + "#" + rest
+    window.location.replace(url)
+}
 
 window.updateURLParams = function(paramObj) {
     let params = window.getURLParams()
@@ -52,6 +59,7 @@ class App extends React.Component {
 
     componentDidMount() {
         $('#background').css('background-image', 'url("img/site-background.jpg")')
+        window.removeExternalParams()
     }
 
     render() {
