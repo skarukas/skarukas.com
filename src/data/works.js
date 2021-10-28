@@ -275,10 +275,7 @@ const worksData = [
 
         "duration": "7 minutes",
         "image": "third-rail.jpg",
-/*         "purchase": {
-            "publisher": "Stephen Karukas",
-            "price": 20
-        }, */
+        "purchase": "contact",
         "audio": "third-rail.mp3"
 
     },
