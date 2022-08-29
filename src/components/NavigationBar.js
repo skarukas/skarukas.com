@@ -10,8 +10,7 @@ export default class NavigationBar extends React.Component {
         $(window).on('resize', () => {
             let w = document.body.clientWidth;
             let $title = $("#nav-title")
-            let $graphic = $("#signature")
-            let $home = $("#home-icon")
+            $("#home-icon").show()
 
             /* Hide navbar title */
             if (w < 850) {
@@ -20,14 +19,7 @@ export default class NavigationBar extends React.Component {
                 $title.is(":hidden") && $title.fadeIn()
             }
 
-            /* Hide navbar signature */
-            if (w < 500) {
-                $graphic.is(":visible") && $graphic.fadeOut()
-                $home.is(":hidden") && $home.fadeIn()
-            } else {
-                $graphic.is(":hidden") && $graphic.fadeIn()
-                $home.is(":visible") && $home.fadeOut()
-            }
+
             $("#content").css("padding-top", $("#navbar").height())
         })
         $(window).trigger('resize')
@@ -42,7 +34,6 @@ export default class NavigationBar extends React.Component {
                 </div>
                 <Link to="/">
                     <img id="home-icon" src="img/home-icon.png" alt="Home button"/>
-                    <img id="signature" src="img/signature.png" alt="Site logo"/>
                 </Link>
                 <span id="nav-title">stephen karukas</span>
             </div>

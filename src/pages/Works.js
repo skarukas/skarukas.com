@@ -29,11 +29,11 @@ export default class WorksPage extends React.Component {
     }
 
     render() {
-        document.title = "Stephen Karukas - Works"
+        document.title = "Stephen Karukas - Music"
         if (!this.state.data) return this.props.fallback || null
         else return (
             <div id="works-page">
-                <SearchBar />
+                <SearchBar placeholder="Filter by keyword (ex: marimba)"/>
                 <PurchaseModal ref={this.modalRef}/>
                 <div className="work-container">
                     { 

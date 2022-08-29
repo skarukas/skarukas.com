@@ -22,11 +22,8 @@ function Page(name, path, component) {
 }
 
 const pages = [
-    /* new Page("home",  "/home",  HomePage), */
-    new Page("code",  "/code",  ProjectsPage),
-    new Page("works", "/works", WorksPage),
-    new Page("news",  "/news",  NewsPage),
-    new Page("about", "/about", AboutPage),
+/*     new Page("code",  "/code",  ProjectsPage), */
+    new Page("music", "/music", WorksPage),
 ]
 
 window.removeExternalParams = function() {
@@ -72,6 +69,7 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path="/" component={WelcomePage}/>
                         {pages.map(page => <Route path={page.path} key={page.name} component={page.component} />)}
+                        <Route exact path="/about" component={AboutPage}/>
                         <Route component={EternalNothingness}/>
                     </Switch>
                 </div>

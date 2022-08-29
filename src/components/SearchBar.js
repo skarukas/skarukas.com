@@ -10,7 +10,7 @@ export default function SearchBar(props) {
             <img src="img/search-icon.png" alt="Search icon"></img>
             <input type="text" 
                 className="search-bar"
-                placeholder="Filter by keyword..."
+                placeholder={props.placeholder || "Filter by keyword..."}
                 onInput={onInput}
                 defaultValue={urlFilter}/>
         </div>

@@ -81,7 +81,7 @@ function Bio() {
                     Ensemble, and California-based ensemble Definiens. He has also produced solo 
                     and duo works through collaborations with Daniel Myers (Elements for multiple 
                     percussion solo), the Hutchens/Myers Duo (It flows for saxophone and marimba), 
-                    Jacob Lipham (Bad Number for solo timpani and To Live and Die in the Wild for 
+                    Rose Lipham (Bad Number for solo timpani and To Live and Die in the Wild for 
                     multiple percussion solo), and Paul Millette (blue-gray for solo marimba). 
                     Recently, blue-gray received the Honorable Mention in the 2019 PASIC Composition 
                     Contest. Other honors include Honorable Mention in the 2018 SCI/ASCAP Student 
@@ -219,12 +219,16 @@ function Tech() {
             {hideIcon}
             <button>tech</button>
             <div className="about-section-content">
-                <p>
-                    Since 2020, I have spent a large amount of my time working in computer science. 
+                <p> 
                     I did my masters at IU focusing on artificial intelligence, and I
                     worked as an associate instructor (teaching assistant) in the CS department
-                    for graduate classes on algorithms and AI.
-                    I also worked as a software engineering intern for Amazon in summer 2021.
+                    for graduate classes on algorithms and AI. I also did some research on 
+                    scale- and rotation-invariant neural networks.
+                </p>
+                <p>
+                    I worked as a software engineering intern for Amazon in summer 2021, 
+                    then in 2022 I joined Google full-time as a software engineer on the
+                    Document AI modeling team.
                 </p>
             </div>
         </div>

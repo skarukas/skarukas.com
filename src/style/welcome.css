@@ -30,6 +30,11 @@
     margin-bottom: 10px;  
 }
 
+.welcome-intro {
+    margin: 10px 0px;
+    color: grey;
+}
+
 .welcome-image-container {
     width: 200px;
     height: 200px;
@@ -40,7 +45,7 @@
     transition: opacity 1s;
     opacity: 0;
     position: absolute;
-    left: 0;
+    left: calc(50% - 25px);
     top: 0;
     width: 200px;
     height: 200px;
@@ -55,8 +60,9 @@
 .welcome-links-container {
     opacity: 0;
     padding: 20px;
-    padding-top: 30px;
+    padding-top: 0px;
     font-size: 0.9em;
+    max-width: 300px;
 }
 
 .welcome-links-container h4 {
