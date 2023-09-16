@@ -46,10 +46,11 @@ const worksData = [
         "duration": "7 minutes",
         "image": "redshift.jpg",
         "purchase": {
-            "publisher": "Stephen Karukas",
-            "price": 20
+          "publisher": "Tapspace",
+          "link": "https://www.tapspace.com/marimba-xylophone/redshift"
         },
-        "audio": "redshift.mp3"
+        "audio": "redshift.mp3",
+        "video": "https://www.youtube.com/watch?v=WbUJQERrcl4"
 
     },
     {
@@ -64,7 +65,7 @@ const worksData = [
         "image": "blue-gray.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20
+            "price": 10
         },
         "audio": "blue-gray.mp3",
         "video": "https://www.youtube.com/watch?v=D1phB4DTI94"
@@ -114,7 +115,7 @@ const worksData = [
         "image": "etude-in-c.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 10
+            "price": 5
         },
         "audio": "etude-in-c.mp3",
         "video": "https://www.youtube.com/watch?v=OptgBA6Zrg8"
@@ -130,7 +131,7 @@ const worksData = [
         "image": "two-epilogues.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20
+            "price": 10
         },
         "audio": "two-epilogues.mp3",
         "video": "https://www.youtube.com/watch?v=93tGL5wUTzg&list=PLofodEqi3NSZQSs8buH0-RvAtxGM_iYVM&index=1"
@@ -178,7 +179,7 @@ const worksData = [
         "image": "bad-number.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20
+            "price": 10
         }
 
 
@@ -189,13 +190,17 @@ const worksData = [
         "year": "2021",
         "instrumentationShort": "percussion quartet",
         "instrumentationLong": "bongos, med. wood block, small cym. low woodblock, snare, kick drum, crash, 3 toms, hi-hat",
-        "description": "Description Coming Soon",
+        "description": `I wrote "Optimal Damage" for the percussion ensemble at Concord High School (Indiana). At the time, I had just graduated from college, and I decided to take a step back in time to pay homage to the kinds of music that first inspired me to become a percussionist when I was in high school.
+
+        Some things that came to mind were the snare breaks that I would play in the marching band show or hear from the prominent indoor drumlines of the time, as well as the groovy, unpitched percussion ensemble music I was exposed to. Inspired by this memory, "Optimal Damage" includes a groovy backbone over which solo/duo opportunities take place, including wood block “snare breaks” and polyrhythmic illusions that create a fun challenge for both students and seasoned players.
+        
+        Optimal Damage was also written with accessibility in mind. The instrumentation is simple enough to be available to virtually any music program or freelance percussionist, and it is small enough to fit in a car.`,
 
         "duration": "6 minutes",
         "image": "optimal-damage.jpg",
         "purchase": {
-            "publisher": "Stephen Karukas",
-            "price": 20
+            "publisher": "C. Alan",
+            "link": "https://c-alanpublications.com/optimal-damage/"
         },
         "audio": "optimal-damage.mp3",
         "video": "https://www.youtube.com/watch?v=cv6uBLnkAw4"
@@ -211,7 +216,7 @@ const worksData = [
         "image": "presence.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 25
+            "price": 15
         },
         "audio": "presence.mp3",
         "video": "https://www.youtube.com/watch?v=-i2Il28IrS0"
@@ -227,7 +232,7 @@ const worksData = [
         "image": "i-am-electric.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20,
+            "price": 12,
             "note": "This is the version for marimba quartet."
         },
         "audio": "i-am-electric.mp3"
@@ -244,7 +249,7 @@ const worksData = [
         "image": "harmonic-motion.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20
+            "price": 15
         },
         "audio": "harmonic-motion.mp3",
         "video": "https://www.youtube.com/watch?v=KOaqDNza7RM&list=PLofodEqi3NSbQ6xc-AUBORqkAZsikB57X&index=1"
@@ -271,7 +276,7 @@ const worksData = [
         "year": "2021",
         "instrumentationShort": "bass clarinet, bari sax, marimba, and piano",
         "instrumentationLong": "bass clarinet, bari sax, marimba (5.0 octave), piano",
-        "description": "Description Coming Soon",
+        "description": `I wrote "Third Rail / Revelation" when living in Seattle in the summer of 2021. My primary interaction with most of the city was through public transit. Through this lens, the city to me was a symbol of freedom, but consequently of fear, whether from the subway racing by the platform at 50 miles per hour or from the very real terror, anxiety, or even ecstasy felt by another passenger whose violent shouting at an apparition brought their imagined reality to life. When writing this piece, the images that stuck in my mind were of the mechanical artifacts from an industrial age that persist into the present in our cities, as well as the ways in which rapidly accelerating technologies bring new anxieties into our lives.`,
 
         "duration": "7 minutes",
         "image": "third-rail.jpg",
@@ -279,6 +284,22 @@ const worksData = [
         "audio": "third-rail.mp3"
 
     },
+    {
+      "id": "third-rail-electronics",
+      "title": "Third Rail / Revelation",
+      "year": "2022",
+      "instrumentationShort": "bari sax, marimba, and fixed media",
+      "instrumentationLong": "baritone sax, marimba (5.0 octave), fixed media",
+      "description": `I wrote "Third Rail / Revelation" when living in Seattle in the summer of 2021. My primary interaction with most of the city was through public transit. Through this lens, the city to me was a symbol of freedom, but consequently of fear, whether from the subway racing by the platform at 50 miles per hour or from the very real terror, anxiety, or even ecstasy felt by another passenger whose violent shouting at an apparition brought their imagined reality to life. When writing this piece, the images that stuck in my mind were of the mechanical artifacts from an industrial age that persist into the present in our cities, as well as the ways in which rapidly accelerating technologies bring new anxieties into our lives.
+ 
+      This piece was originally written for marimba, bari sax, piano, and bass clarinet. In the duet version with electronics, I used prepared piano samples and noisy synths to reimagine these parts as mechanical sonic objects, inspired by the <a href="https://www.youtube.com/watch?v=ibInHhy5Jmw" target="_blank">gritty experimental techno</a> that had served as a soundtrack to the bus rides I took between the International District and downtown Seattle.`,
+ 
+      "duration": "7 minutes",
+      "image": "third-rail-photo.jpg",
+      "purchase": "contact",
+      "audio": "third-rail-with-electronics.mp3"
+
+  },
     /* {
         "id": "material",
         "title": "Material",
@@ -307,7 +328,7 @@ const worksData = [
         "image": "three-shades-of-sun.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 15,
+            "price": 10,
             "note": "This is the version for solo violin."
         },
         "audio": "three-shades-of-sun.mp3",
@@ -324,7 +345,7 @@ const worksData = [
         "image": "three-shades-of-sun.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 15,
+            "price": 10,
             "note": "This is the version for solo viola."
         },
         "audio": "three-shades-of-sun.mp3",
@@ -341,7 +362,7 @@ const worksData = [
         "image": "man-against-himself.jpg",
         "purchase": {
             "publisher": "Stephen Karukas",
-            "price": 20
+            "price": 10
         },
         "audio": "man-against-himself.mp3",
         "video": "https://www.youtube.com/watch?v=9_bwdNdev0M"

@@ -1,4 +1,5 @@
 import "../style/SocialContainer.css"
+import EasyLink from "./EasyLink"
 
 export default function SocialContainer() {
     return (
@@ -15,8 +16,8 @@ export default function SocialContainer() {
 
 function SocialLink(props) {
     return (
-        <a target="_blank" rel="noreferrer" href={props.href} title={props.name}>
+        <EasyLink to={props.href} title={props.name}>
             <img className="transparent-icon" src={props.img} alt={props.name}/>
-        </a>
+        </EasyLink>
     )
 }

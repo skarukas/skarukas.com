@@ -114,3 +114,13 @@
 .show-details-button:hover * {
     opacity: 1;
 }
+
+.work-description a {
+  color: rgb(0, 46, 145) !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.2s;
+}
+
+.work-descriptio a:hover {
+  opacity: 1 !important;
+}

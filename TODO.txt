@@ -1,21 +1,3 @@
-/- Add local purchase link
-/- make pages/items linkable (react router)
-/- add linkable id's for works
-/- add filter query for works
-/- fix three shades thing, how to specify instrument
-/- add filter query for news
-/- set up actual paypal business thing, make sure alert for item comes in
-/- add linkable id's for news
-/- paypal button not working on mobile (?)
-/- use production react
-/- change title when navigating pages
-/- make linkable from facebook....
-/- add tech bio/info
-/- update resumes
-
-IMPORTANT
-- edit bio yuck
-
 ISSUES
 - make sure hover things work for mobile
 - fix the href thing
@@ -23,15 +5,12 @@ ISSUES
 - fix background image repeating
 - long load time for about images
 
-
 FEATURES
 - add groups for "list" pages
 - add header to each page
 - make all images progressive JPGs
 
 CONTENT
-- add lattice search in code
 - add more news events
-- use diff bio
 - create description for optimal damage
 - do something with video?

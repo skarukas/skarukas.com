@@ -9,74 +9,83 @@ import AboutPage from "./pages/About"
 import NewsPage from "./pages/News"
 import ProjectsPage from "./pages/Project"
 import WorksPage from "./pages/Works"
- 
+
 import NavigationBar from "./components/NavigationBar"
 import SocialContainer from "./components/SocialContainer"
 
 import './style/App.css'
+import CollagesPage from "./pages/Collages";
 
-function Page(name, path, component) {
-    this.name = name;
-    this.path = path;
-    this.component = component
-}
-
-const pages = [
-/*     new Page("code",  "/code",  ProjectsPage), */
-    new Page("music", "/music", WorksPage),
+const NAVIGATION_BAR_PAGES = [
+  ProjectsPage,
+  CollagesPage,
+  WorksPage
 ]
 
-window.removeExternalParams = function() {
-    // remove params that come before hash (#), for example fbclid
-    let splitUrl = window.location.href.split("#")
-    let rest = splitUrl[splitUrl.length-1]
-    let origin = window.location.origin
-    let url = origin + "#" + rest
-    window.location.replace(url)
+const OTHER_ROUTABLE_PAGES = [
+  WelcomePage,
+  AboutPage,
+  NewsPage,
+]
+
+window.removeExternalParams = function () {
+  // remove params that come before hash (#), for example fbclid
+  let splitUrl = window.location.href.split("#")
+  let rest = splitUrl[splitUrl.length - 1]
+  let origin = window.location.origin
+  let url = origin + "#" + rest
+  window.location.replace(url)
 }
 
-window.updateURLParams = function(paramObj) {
-    let params = window.getURLParams()
-    for (let [key, value] of Object.entries(paramObj)) params.set(key, value)
-    let baseUrl = window.location.href.split("?")[0]
-    let url = baseUrl + "?" + params
-    window.location.replace(url)
+window.updateURLParams = function (paramObj) {
+  let params = window.getURLParams()
+  for (let [key, value] of Object.entries(paramObj)) {
+    if (value == null || value === '') {
+      params.delete(key)
+    } else {
+      params.set(key, value)
+    }
+  }
+  let baseUrl = window.location.href.split("?")[0]
+  let url = params.size ? baseUrl + "?" + params : baseUrl
+  window.location.replace(url)
 }
 
-window.getURLParam = function(key) {
-    return window.getURLParams().get(key)
+window.getURLParam = function (key) {
+  return window.getURLParams().get(key)
 }
 
-window.getURLParams = function() {
-    return new URLSearchParams(window.location.href.split("?")[1])
+window.getURLParams = function () {
+  return new URLSearchParams(window.location.href.split("?")[1])
 }
 
 
 class App extends React.Component {
 
-    componentDidMount() {
-        $('#background').css('background-image', 'url("img/site-background.jpg")')
-        window.removeExternalParams()
-    }
+  componentDidMount() {
+    $('#background').css('background-image', 'url("img/site-background.jpg")')
+    window.removeExternalParams()
+  }
 
-    render() {
-        return (
-            <HashRouter basename='/'>
-                <div id="background"></div>
-                <NavigationBar pages={pages} />
-                <SocialContainer />
-                <div id="content">
-                    <Switch>
-                        <Route exact path="/" component={WelcomePage}/>
-                        {pages.map(page => <Route path={page.path} key={page.name} component={page.component} />)}
-                        <Route exact path="/about" component={AboutPage}/>
-                        <Route component={EternalNothingness}/>
-                    </Switch>
-                </div>
-                <div id="footer"></div>
-            </HashRouter>
-        )
-    }
+  render() {
+    return (
+      <HashRouter basename='/'>
+        <div id="background"></div>
+        <NavigationBar pages={NAVIGATION_BAR_PAGES} />
+        <SocialContainer />
+        <div id="content">
+          <Switch>
+            {
+              [...NAVIGATION_BAR_PAGES, ...OTHER_ROUTABLE_PAGES].map(page => <Route exact path={page.PAGE_PATH} key={page.PAGE_NAME} component={page} />)
+            }
+            {/* Catches all other routes (404). */}
+            <Route component={EternalNothingness} />
+          </Switch>
+        </div>
+        <div id="footer"></div>
+      </HashRouter>
+    )
+  }
 }
 
 export default App;

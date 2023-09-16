@@ -24,3 +24,11 @@
     opacity: 0;
     padding: 5px;
 }
+
+.eternal-center-container span {
+  opacity: 0;
+}
+
+.eternal-center-container a {
+    color: rgb(50, 94, 255) !important;
+}

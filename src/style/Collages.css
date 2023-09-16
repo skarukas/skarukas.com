@@ -1,0 +1,33 @@
+#collage-page {
+
+}
+
+.collage-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collage-image-container {
+  position: relative;
+  margin: 10px;
+  border: 5px solid rgb(144, 0, 0);
+}
+.collage-title {
+  display: none;
+  font-size: small;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: white;
+}
+
+.collage-image {
+  margin: 0;
+  padding: 0;
+  width: 300px
+}

@@ -7,23 +7,33 @@ import AudioPlayer from "../components/AudioPlayer";
 import worksData from "../data/works"
 import "../style/Works.css"
 
+const WORK_ID = 'work-id'
 
 export default class WorksPage extends React.Component {
-    state = { data: worksData }
+    static PAGE_PATH = "/music"
+    static PAGE_NAME = "compositions"
+    state = { 
+      // Sort desc by year.
+      data: worksData.sort((a, b) => (b['year'] || 0) - (a['year'] || 0))
+    }
     modalRef = React.createRef()
 
     componentDidMount() {
-        if (window.getURLParam("work-id")) {
+        if (window.getURLParam(WORK_ID)) {
             setTimeout(() => {
                 // FIX THIS
-                let $queryWork = $("#" + window.getURLParam("work-id"))
-                let offset = $queryWork.offset().top
-                let scrollVal = offset - ($('#navbar').height() + 4)
-                window.scroll({
-                    top: scrollVal,
-                    left: 0, 
-                    behavior: 'smooth'
-                });
+                let $queryWork = $("#" + window.getURLParam(WORK_ID))
+                if ($queryWork.length) {
+                  let offset = $queryWork.offset().top
+                  let scrollVal = offset - ($('#navbar').height() + 4)
+                  window.scroll({
+                      top: scrollVal,
+                      left: 0, 
+                      behavior: 'smooth'
+                  });
+                } else {
+                  window.updateURLParams({ [WORK_ID]: null})
+                }
             }, 1000)
         }
     }
@@ -33,12 +43,13 @@ export default class WorksPage extends React.Component {
         if (!this.state.data) return this.props.fallback || null
         else return (
             <div id="works-page">
+                <h3 style={{ textAlign: "center", marginBottom: "5px"}}>☵ musical compositions</h3>
                 <SearchBar placeholder="Filter by keyword (ex: marimba)"/>
                 <PurchaseModal ref={this.modalRef}/>
                 <div className="work-container">
                     { 
                         this.state.data.map((work, idx) => {
-                            let showDetails = work.id === window.getURLParam("work-id")
+                            let showDetails = work.id === window.getURLParam(WORK_ID)
                             return <Work work={work} key={idx} modalRef={this.modalRef} showDetails={showDetails}/>
                         })
                     }
@@ -94,6 +105,7 @@ class Work extends React.Component {
             .children(".toggle-details")
             .slideToggle(500)
         
+        window.updateURLParams({ [WORK_ID]: this.state.work.id })
 
         /* Pause all audio */
         $('.work')

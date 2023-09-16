@@ -3,6 +3,7 @@ import React from "react"
 import "../style/Purchase.css"
 
 import Loader from "../components/Loader"
+import EasyLink from "./EasyLink"
 
 export default class PurchaseModal extends React.Component {
     state = {}
@@ -86,7 +87,7 @@ export default class PurchaseModal extends React.Component {
                 purchaseDetails = (
                     <div className="approved-email">
                         <p>A PDF will be sent to <span className="email-address">{this.state.approvedEmail}</span>.</p>
-                        <p>If this is incorrect, or if you have any questions, contact <a href="mailto:stephen.karukas@gmail.com" className="hover-anchor">stephen.karukas@gmail.com</a></p>
+                        <p>If this is incorrect, or if you have any questions, contact <EasyLink to="mailto:stephen.karukas@gmail.com" className="hover-anchor">stephen.karukas@gmail.com</EasyLink></p>
                     </div>
                 )
             } else {

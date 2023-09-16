@@ -3,19 +3,28 @@ import {Link} from "react-router-dom"
 import $ from "jquery"
 import "../style/welcome.css"
 
+import MixedProjectsPage from "./MixedProjects"
+import EasyLink from "../components/EasyLink"
+import AboutPage from "./About"
+
 const WELCOME_INTRO = (
     <div>
         <div>
-        I like to write music and play drums/percussion. I currently live in Seattle and work on document-understanding AI at Google.
+        I write music and play drums/percussion. I currently live in Seattle and work on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google.
         </div>
     </div>
 )
 const WELCOME_SUBTITLE = "music + tech"
 
 export default class WelcomePage extends React.Component {
+    static PAGE_PATH = "/"
+    static PAGE_NAME = "welcome"
     componentDidMount() {
         $('.welcome-content')
             .fadeTo(2000, 1)
+        $('.arrow-image')
+            .delay(1000)
+            .fadeTo(1000, 0.3)
         $('.welcome-links-container')
             .delay(1000)
             .fadeTo(1000, 1)
@@ -49,14 +58,20 @@ export default class WelcomePage extends React.Component {
                         {/* <h4 style={{color: "grey"}}>external links</h4> */}
                         <hr/>
                         <div className="welcome-links">
-                            <p><a id="welcome-beats" href="https://www.instagram.com/p/CbGhbi2g722/" target="_blank">watch me play a beat</a></p>
-                            <p><a id="welcome-compositions" href="https://www.youtube.com/watch?v=yiPUJJI4le4&list=PLofodEqi3NSZDBdYGyCaNYI58lMumx2WY&index=1" target="_blank">listen to music i wrote</a></p>
-                            <p><a id="welcome-scriabin" href="https://www.youtube.com/watch?v=k70dESIKspE&list=PLofodEqi3NSYKQktUet-efcpJ3U3SD8sT&index=1" target="_blank">scriabin on marimba</a></p>
-                            {/* <p><a id="welcome-microtonal" href="https://github.com/search?q=user%3Askarukas+microtonal" target="_blank">microtonal tools</a></p> */}
-                            <p><Link to="/about" id="welcome-beats">more about me (bios, materials)</Link></p>
+                            <p><EasyLink id="welcome-beats" to="https://www.instagram.com/p/CbGhbi2g722/">watch me play a beat</EasyLink></p>
+                            <p><EasyLink id="welcome-compositions" to="https://www.youtube.com/watch?v=yiPUJJI4le4&list=PLofodEqi3NSZDBdYGyCaNYI58lMumx2WY&index=1">listen to music i wrote</EasyLink></p>
+                            <p><EasyLink id="welcome-scriabin" to="https://www.youtube.com/watch?v=k70dESIKspE&list=PLofodEqi3NSYKQktUet-efcpJ3U3SD8sT&index=1">scriabin on marimba</EasyLink></p>
+                            <p><EasyLink id="welcome-microtonal" to="https://github.com/search?q=user%3Askarukas+microtonal">microtonal tools</EasyLink></p>
+                            <p><EasyLink to={AboutPage.PAGE_PATH} id="welcome-beats">more about me (bios, materials)</EasyLink></p>
                         </div>
                         <hr/>
+                        <div className="arrow-image-container">
+                          <img className="arrow-image" src="img/expand-down-icon.png"/>
+                        </div>
                     </div>
+                </div>
+                <div className="projects">
+                  <MixedProjectsPage></MixedProjectsPage>
                 </div>
             </div>
 

@@ -2,7 +2,8 @@ import "../style/SearchBar.css"
 
 export default function SearchBar(props) {
     const onInput = event => {
-        window.updateURLParams({ filter: event.target.value })
+        let v = event.target.value || null
+        window.updateURLParams({ filter: v })
     }
     let urlFilter = window.getURLParam("filter")
     return (

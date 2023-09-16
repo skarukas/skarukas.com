@@ -7,6 +7,8 @@ import newsData from "../data/news"
 import "../style/News.css"
 
 export default class NewsPage extends React.Component {
+    static PAGE_PATH = "/news-archive"
+    static PAGE_NAME = "news"
     componentDidMount() {
         if (window.getURLParam("news-id")) {
             setTimeout(() => {
