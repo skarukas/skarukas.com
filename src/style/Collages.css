@@ -1,7 +1,3 @@
-#collage-page {
-
-}
-
 .collage-container {
   width: 100%;
   display: flex;
@@ -30,4 +26,9 @@
   margin: 0;
   padding: 0;
   width: 300px
+}
+
+#whiteboard {
+  width: 100vw;
+  height: calc(100vh - 120px);
 }
