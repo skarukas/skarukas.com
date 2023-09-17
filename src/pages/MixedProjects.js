@@ -10,13 +10,14 @@ const SYMBOLS = ["☰", "☱", "☲", "☳", "☴", "☵", "☶"].sort(
 )
 
 class ProjectInfo {
-  constructor(year, month, title, content = null, url = null, custom_time = null) {
+  constructor(year, month, title, content = null, url = null, custom_time = false) {
     this.year = year
     this.month_n = MONTHS.indexOf(month)
-    let time = custom_time || month + " " + year
+    let time = custom_time === false ? month + " " + year : custom_time
     content = content ? " -- " + content : ''
+    let timestr = time ? " (" + time + ")" : ''
     this.element = (<span>
-      <EasyLink to={url}><strong>{title}</strong> ({time})</EasyLink>
+      <EasyLink to={url}><strong>{title}</strong>{timestr}</EasyLink>
       {content}
     </span>)
   }
@@ -29,7 +30,7 @@ const projectsData = [
     'surreal collages',
     null,
     CollagesPage.PAGE_PATH,
-    'ongoing'
+    null
   ),
   new ProjectInfo(
     2023,
