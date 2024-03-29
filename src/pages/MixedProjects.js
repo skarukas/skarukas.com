@@ -25,41 +25,26 @@ class ProjectInfo {
 
 const projectsData = [
   new ProjectInfo(
-    3000,
-    'october',
-    'surreal collages',
-    null,
-    CollagesPage.PAGE_PATH,
-    null
-  ),
-  new ProjectInfo(
     2023,
     'april',
     'city of water',
     '[as kmodp] collaborative ep with cellartone and luc jardie.',
     "https://cellartone.bandcamp.com/album/city-of-water-2"
   ),
-  /* new ProjectInfo(
-    2023,
-    'october',
-    'crimée no. 7',
-    '[as kmodp] album of electronic music.'
-  ), */
   new ProjectInfo(
-    3000,
-    'october',
+    2024,
+    'february',
     'crimée no. 7',
     '[as kmodp] album of electronic music.',
-    null,
-    'ongoing'
+    "https://kmodp.net/#/crimee-no-7"
   ),
   new ProjectInfo(
-    2023,
-    'may',
-    'crimée no. 7a',
-    '[as kmodp] single from upcoming album.',
-    "https://kmodp.bandcamp.com/album/2023-021-crim-e-no-7a"
-  )
+    2024,
+    'february',
+    'rain on the sea',
+    "single by Traveling Boyfriend (arrangement / production)",
+    'https://travelingboyfriend.bandcamp.com/track/rain-on-the-sea'
+  ),
 ].sort((a, b) => {
   if (a.year === b.year) {
     return b.month_n - a.month_n
