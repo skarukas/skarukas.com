@@ -77,9 +77,10 @@ export default class WelcomePage extends React.Component {
           <MixedProjectsPage></MixedProjectsPage>
           <div>
           <YoutubeVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/WbUJQERrcl4?si=3KIeiVn4DA63axP-"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/k70dESIKspE?si=q_VbWbyG150_wq2_"/>
+          <YoutubeVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg"/>
+          <YoutubeVideo src="https://www.youtube.com/embed/HZonuuFCC5Y?si=PAss0t_jTJH5Wd4H"/>
           <YoutubeVideo src="https://www.youtube.com/embed/M0sxQlrMhrA?si=g5-t_9pdf6oOyiCa"/>
+          <YoutubeVideo src="https://www.youtube.com/embed/jwlZwQ1BCDM?si=-yO-fepAy1AwOO4u"/>
           </div>
         </div>
       </div>
