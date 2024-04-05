@@ -55,23 +55,6 @@ const projectsData = [
 /* Display the list of CS projects */
 export default class MixedProjectsPage extends React.Component {
   state = { data: projectsData }
-  componentDidMount() {
-    let checkScrollFade = () => {
-      $('.fade-on-scroll').each(function (i) {
-        var top_of_element = $(this).offset().top
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > top_of_element) {
-          $(this).animate({ 'opacity': '1' }, { duration: 1000, queue: false });
-        } else {
-          $(this).animate({ 'opacity': '0' }, { duration: 0, queue: false });
-        }
-      });
-    }
-    checkScrollFade()
-    $(window).scroll(function () {
-      checkScrollFade()
-    });
-  }
   render() {
     if (!this.state.data) return this.props.fallback || null
     else {
@@ -89,7 +72,7 @@ export default class MixedProjectsPage extends React.Component {
 }
 
 function Project(props) {
-  let symbol = SYMBOLS[props.idx % SYMBOLS.length]//(props.idx === props.len - 1) ? "┗" : "┣";
+  let symbol = SYMBOLS[props.idx % SYMBOLS.length]
   return (<li bullet-style={symbol} className="fade-on-scroll">{props.data.
     element}
   </li>)

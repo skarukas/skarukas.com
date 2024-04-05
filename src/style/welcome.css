@@ -116,10 +116,6 @@ li:before {
     opacity: 1;
 }
 
-.fade-on-scroll {
-  opacity: 0;
-}
-
 .projects {
   position: absolute;
   top: 100vh;
