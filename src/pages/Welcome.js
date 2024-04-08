@@ -5,6 +5,7 @@ import "../style/welcome.css"
 import MixedProjectsPage from "./MixedProjects"
 import EasyLink from "../components/EasyLink"
 import AboutPage from "./About"
+import BirthYearPage from "./BirthYear"
 
 function YoutubeVideo(props) {
   return (<iframe width="500" style={{maxWidth: "100vw"}} height="315" src={props.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
@@ -38,7 +39,9 @@ export default class WelcomePage extends React.Component {
 
     function selectImage(idx) {
       $('.welcome-image').removeClass('image-selected')
-      $(`.welcome-image:nth-child(${idx + 1})`).addClass('image-selected')
+      let elem = $(`.welcome-image:nth-child(${idx + 1})`)
+      elem = elem.length ? elem : $(".welcome-image:first-child")
+      elem.addClass('image-selected')
     }
   }
   render() {
@@ -51,7 +54,7 @@ export default class WelcomePage extends React.Component {
             <img className="welcome-image" src="img/welcome-img/beats.jpg" />
             <img className="welcome-image" src="img/welcome-img/it-flows.jpg" />
             <img className="welcome-image" src="img/welcome-img/scriabin.jpg" />
-            <img className="welcome-image image-selected" src="img/welcome-img/google.jpg" />
+            <img className="welcome-image" src="img/lattice-story.png" />
           </div>
 
           <h3>stephen karukas</h3>
@@ -66,6 +69,7 @@ export default class WelcomePage extends React.Component {
               <p><EasyLink id="welcome-scriabin" to="https://www.youtube.com/watch?v=k70dESIKspE&list=PLofodEqi3NSYKQktUet-efcpJ3U3SD8sT&index=1">scriabin on marimba</EasyLink></p>
               <p><EasyLink id="welcome-microtonal" to="https://github.com/search?q=user%3Askarukas+microtonal">microtonal tools</EasyLink></p>
               <p><EasyLink to={AboutPage.PAGE_PATH} id="welcome-beats">more about me (bios, materials)</EasyLink></p>
+              <p>FAQ: what is my birth year? Click <EasyLink to={BirthYearPage.PAGE_PATH}>here</EasyLink>.</p>
             </div>
             <hr />
             <div className="arrow-image-container">
