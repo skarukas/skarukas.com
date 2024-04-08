@@ -46,7 +46,7 @@ export default class EternalNothingness extends React.Component {
                     <span>.</span>
                     <span>.</span>
                     <p>or perhaps...</p>
-                    <p><EasyLink to="https://egggame.org/">this</EasyLink> is what you're waiting for?</p>
+                    <p><EasyLink to="https://egggame.org/">this</EasyLink> is what you're looking for?</p>
                 </div>
             </div>
         )
