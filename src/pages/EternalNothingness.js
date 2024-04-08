@@ -31,8 +31,7 @@ export default class EternalNothingness extends React.Component {
             <div id="eternity">
                 <div className="eternal-center-container">
                     <p>looks like you took a wrong turn.</p>
-                    <p>however you got here, you will not be leaving.</p>
-                    <p>welcome to eternity.</p>
+                    <p>you must now serve your sentence.</p>
                     <p>❖</p>
                     <span>.</span>
                     <span>.</span>
