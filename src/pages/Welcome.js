@@ -14,7 +14,7 @@ function YoutubeVideo(props) {
 const WELCOME_INTRO = (
   <div>
     <div>
-      I write music and play drums/percussion. I currently live in Seattle and work on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google.
+      I write music and play drums/percussion. I currently live in Seattle and work on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google. I release electronic music as <EasyLink to="https://kmodp.net">kmodp</EasyLink>.
     </div>
   </div>
 )
