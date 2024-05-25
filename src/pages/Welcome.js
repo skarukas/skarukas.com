@@ -7,8 +7,8 @@ import EasyLink from "../components/EasyLink"
 import AboutPage from "./About"
 import BirthYearPage from "./BirthYear"
 
-function YoutubeVideo(props) {
-  return (<iframe width="500" style={{maxWidth: "100vw"}} height="315" src={props.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
+function IFrameVideo(props) {
+  return (<iframe width="500" style={{ maxWidth: "100vw" }} height="315" src={props.src} title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
 }
 
 const WELCOME_INTRO = (
@@ -80,11 +80,12 @@ export default class WelcomePage extends React.Component {
         <div className="projects">
           <MixedProjectsPage></MixedProjectsPage>
           <div>
-          <YoutubeVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/HZonuuFCC5Y?si=PAss0t_jTJH5Wd4H"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/M0sxQlrMhrA?si=g5-t_9pdf6oOyiCa"/>
-          <YoutubeVideo src="https://www.youtube.com/embed/jwlZwQ1BCDM?si=-yO-fepAy1AwOO4u"/>
+            <IFrameVideo src="https://drive.google.com/file/d/1_AqsFgK9-wc6NtMQ-djtULqo0sMoNISx/preview" />
+            <IFrameVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7" />
+            <IFrameVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg" />
+            <IFrameVideo src="https://www.youtube.com/embed/HZonuuFCC5Y?si=PAss0t_jTJH5Wd4H" />
+            <IFrameVideo src="https://www.youtube.com/embed/M0sxQlrMhrA?si=g5-t_9pdf6oOyiCa" />
+            <IFrameVideo src="https://www.youtube.com/embed/jwlZwQ1BCDM?si=-yO-fepAy1AwOO4u" />
           </div>
         </div>
       </div>
