@@ -15,17 +15,15 @@ import NavigationBar from "./components/NavigationBar"
 import SocialContainer from "./components/SocialContainer"
 
 import './style/App.css'
-import CollagesPage from "./pages/Collages";
 
 const NAVIGATION_BAR_PAGES = [
   ProjectsPage,
-  CollagesPage,
+  AboutPage,
   WorksPage
 ]
 
 const OTHER_ROUTABLE_PAGES = [
   WelcomePage,
-  AboutPage,
   NewsPage,
   BirthYearPage
 ]

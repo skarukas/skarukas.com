@@ -6,15 +6,12 @@ import MixedProjectsPage from "./MixedProjects"
 import EasyLink from "../components/EasyLink"
 import AboutPage from "./About"
 import BirthYearPage from "./BirthYear"
-
-function IFrameVideo(props) {
-  return (<iframe width="500" style={{ maxWidth: "100vw" }} height="315" src={props.src} title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
-}
+import IFrameVideo from "../components/VideoPlayer"
 
 const WELCOME_INTRO = (
   <div>
     <div>
-      I write music and play drums/percussion. I currently live in Seattle and work on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google. I release electronic music as <EasyLink to="https://kmodp.net">kmodp</EasyLink>.
+      I write music and play drums/percussion. I currently live in Seattle, working on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google and releasing electronic music as <EasyLink to="https://kmodp.net">kmodp</EasyLink>.
     </div>
   </div>
 )
@@ -51,7 +48,8 @@ export default class WelcomePage extends React.Component {
         <div className="welcome-content">
           <div className="welcome-image-container">
             <img className="welcome-image image-selected" src="img/welcome-img/google.jpg" />
-            <img className="welcome-image" src="img/welcome-img/beats.jpg" />
+            <img className="welcome-image" src="img/welcome-img/google.jpg" />
+            <img className="welcome-image" src="img/welcome-img/crimee.png" />
             <img className="welcome-image" src="img/welcome-img/it-flows.jpg" />
             <img className="welcome-image" src="img/welcome-img/scriabin.jpg" />
             <img className="welcome-image" src="img/lattice-story.png" />
@@ -64,11 +62,11 @@ export default class WelcomePage extends React.Component {
             {/* <h4 style={{color: "grey"}}>external links</h4> */}
             <hr />
             <div className="welcome-links">
-              <p><EasyLink id="welcome-beats" to="https://www.instagram.com/p/CbGhbi2g722/">watch me play a beat</EasyLink></p>
-              <p><EasyLink id="welcome-compositions" to="https://www.youtube.com/watch?v=yiPUJJI4le4&list=PLofodEqi3NSZDBdYGyCaNYI58lMumx2WY&index=1">listen to music i wrote</EasyLink></p>
+              <p><EasyLink to={AboutPage.PAGE_PATH} id="welcome-about">about me</EasyLink></p>
+              <p><EasyLink id="welcome-kmodp" to="https://open.spotify.com/album/7Jwz9fVitkJ25I8S0aTrft?si=_yYCGgWpTXqoW0r7NT0zTA">listen to the new kmodp album</EasyLink></p>
+              <p><EasyLink id="welcome-compositions" to="https://www.youtube.com/watch?v=yiPUJJI4le4&list=PLofodEqi3NSZDBdYGyCaNYI58lMumx2WY&index=1">listen to my instrumental music</EasyLink></p>
               <p><EasyLink id="welcome-scriabin" to="https://www.youtube.com/watch?v=k70dESIKspE&list=PLofodEqi3NSYKQktUet-efcpJ3U3SD8sT&index=1">scriabin on marimba</EasyLink></p>
               <p><EasyLink id="welcome-microtonal" to="https://github.com/search?q=user%3Askarukas+microtonal">microtonal tools</EasyLink></p>
-              <p><EasyLink to={AboutPage.PAGE_PATH} id="welcome-beats">more about me (bios, materials)</EasyLink></p>
               <p>FAQ: what is my birth year? Click <EasyLink to={BirthYearPage.PAGE_PATH}>here</EasyLink>.</p>
             </div>
             <hr />
@@ -80,6 +78,7 @@ export default class WelcomePage extends React.Component {
         <div className="projects">
           <MixedProjectsPage></MixedProjectsPage>
           <div>
+            <h3 style={{ textAlign: "center" }}>☴ some videos</h3>
             <IFrameVideo src="https://drive.google.com/file/d/1_AqsFgK9-wc6NtMQ-djtULqo0sMoNISx/preview" />
             <IFrameVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7" />
             <IFrameVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg" />

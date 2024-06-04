@@ -14,7 +14,7 @@ class ProjectInfo {
     this.year = year
     this.month_n = MONTHS.indexOf(month)
     let time = custom_time === false ? month + " " + year : custom_time
-    content = content ? " -- " + content : ''
+    content = content ? " — " + content : ''
     let timestr = time ? " (" + time + ")" : ''
     this.element = (<span>
       <EasyLink to={url}><strong>{title}</strong>{timestr}</EasyLink>
