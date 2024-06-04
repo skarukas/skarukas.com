@@ -92,6 +92,13 @@
     font-size: 0.9em;
 }
 
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(max(min(400px, 100%), min(50%, 600px)));
+}
+
 .work audio {
     float:right;
     margin: 10px;

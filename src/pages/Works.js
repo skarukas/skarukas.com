@@ -55,6 +55,7 @@ export default class WorksPage extends React.Component {
     else return (
       <div id="works-page">
         <h3 style={{ textAlign: "center", marginBottom: "5px" }}>☵ instrumental compositions</h3>
+        <img className="centered-image" src="img/it-flows-performance.png" alt="It flows performance" />
         <SearchBar placeholder="Filter by keyword (ex: marimba)" />
         <PurchaseModal ref={this.modalRef} />
         <div className="work-container">
