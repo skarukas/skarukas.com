@@ -79,12 +79,12 @@ export default class WelcomePage extends React.Component {
           <MixedProjectsPage></MixedProjectsPage>
           <div>
             <h3 style={{ textAlign: "center" }}>☴ some videos</h3>
-            <IFrameVideo src="https://drive.google.com/file/d/1_AqsFgK9-wc6NtMQ-djtULqo0sMoNISx/preview" />
-            <IFrameVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7" />
-            <IFrameVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg" />
-            <IFrameVideo src="https://www.youtube.com/embed/HZonuuFCC5Y?si=PAss0t_jTJH5Wd4H" />
-            <IFrameVideo src="https://www.youtube.com/embed/M0sxQlrMhrA?si=g5-t_9pdf6oOyiCa" />
-            <IFrameVideo src="https://www.youtube.com/embed/jwlZwQ1BCDM?si=-yO-fepAy1AwOO4u" />
+            <IFrameVideo src="https://www.youtube.com/embed/oUzFurMZIM4?si=v17zikHtFjnd6vwf" square="true" />
+            <IFrameVideo src="https://www.youtube.com/embed/yiPUJJI4le4?si=nfbAPTQK_HFgKPY7" square="true" />
+            <IFrameVideo src="https://www.youtube.com/embed/oIgDlbJkTwk?si=km8mUIFh2nSEKzEg" square="true" />
+            <IFrameVideo src="https://www.youtube.com/embed/HZonuuFCC5Y?si=PAss0t_jTJH5Wd4H" square="true" />
+            <IFrameVideo src="https://www.youtube.com/embed/M0sxQlrMhrA?si=g5-t_9pdf6oOyiCa" square="true" />
+            <IFrameVideo src="https://www.youtube.com/embed/jwlZwQ1BCDM?si=-yO-fepAy1AwOO4u" square="true" />
           </div>
         </div>
       </div>
