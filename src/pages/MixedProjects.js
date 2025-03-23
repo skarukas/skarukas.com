@@ -19,6 +19,13 @@ const projectsData = [
   (<span>
     September 20, 2025 — Splinter Percussion @ <EasyLink to={"https://www.waywardmusic.org/"}>Wayward Music Series.</EasyLink>
   </span>),
+  (<ProjectInfo
+    year={2024}
+    month={'march'}
+    title={'inconnu'}
+    content={'electronic music collaboration between kmodp and Køemner.'}
+    url={"https://open.spotify.com/track/3lkEvOKH2c3w8oJErmS8Nl?si=ab029a55a1eb4873"} />)
+  ,
   (<span>
     March 21, 2025 — <EasyLink to={"https://www.waywardmusic.org/event/bongo-funhouse/"}>Bongo Funhouse (improvised percussion trio) @ Wayward Music Series.</EasyLink>
   </span>),
