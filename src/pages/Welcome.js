@@ -7,15 +7,16 @@ import EasyLink from "../components/EasyLink"
 import AboutPage from "./About"
 import BirthYearPage from "./BirthYear"
 import IFrameVideo from "../components/VideoPlayer"
+import InProgressPage from "./InProgress"
 
 const WELCOME_INTRO = (
   <div>
     <div>
-      I write music and play drums/percussion. I currently live in Seattle, working on <EasyLink to="https://cloud.google.com/vertex-ai/docs/generative-ai/embeddings/get-text-embeddings" id="google-team-link">large language models</EasyLink> at Google and releasing electronic music as <EasyLink to="https://kmodp.net">kmodp</EasyLink>.
+      I write music and play drums and percussion. I release electronic music as <EasyLink to="https://kmodp.net">kmodp</EasyLink> and produce music for <EasyLink to="https://travelingboyfriend.bandcamp.com">Traveling Boyfriend</EasyLink>.
     </div>
   </div>
 )
-const WELCOME_SUBTITLE = "music + tech"
+const WELCOME_SUBTITLE = "music + software"
 
 export default class WelcomePage extends React.Component {
   static PAGE_PATH = "/"
@@ -63,6 +64,7 @@ export default class WelcomePage extends React.Component {
             <hr />
             <div className="welcome-links">
               <p><EasyLink to={AboutPage.PAGE_PATH} id="welcome-about">about me</EasyLink></p>
+              <p><EasyLink id="welcome-in-progress" to={InProgressPage.PAGE_PATH}>what i'm working on</EasyLink></p>
               <p><EasyLink id="welcome-kmodp" to="https://open.spotify.com/album/7Jwz9fVitkJ25I8S0aTrft?si=_yYCGgWpTXqoW0r7NT0zTA">listen to the new kmodp album</EasyLink></p>
               <p><EasyLink id="welcome-compositions" to="https://www.youtube.com/watch?v=yiPUJJI4le4&list=PLofodEqi3NSZDBdYGyCaNYI58lMumx2WY&index=1">listen to my instrumental music</EasyLink></p>
               <p><EasyLink id="welcome-scriabin" to="https://www.youtube.com/watch?v=k70dESIKspE&list=PLofodEqi3NSYKQktUet-efcpJ3U3SD8sT&index=1">scriabin on marimba</EasyLink></p>

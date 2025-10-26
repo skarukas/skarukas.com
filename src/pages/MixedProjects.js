@@ -17,10 +17,19 @@ function ProjectInfo(props) { //year, month, title, content = null, url = null, 
 
 const projectsData = [
   (<span>
-    September 20, 2025 — Splinter Percussion @ <EasyLink to={"https://www.waywardmusic.org/"}>Wayward Music Series.</EasyLink>
+    April 29, 2026 — Bongo Funhouse (improvised percussion + electronics) @ Wayward Music Series.
+  </span>),
+  (<span>
+    December 2025 — <EasyLink to="https://pdimagearchive.org/images/465beb37-7ca3-4ece-9e34-cdeb836d586f/">see</EasyLink> you later, <b>I'm moving to <EasyLink to="https://pdimagearchive.org/images/c71753a0-8c40-4e41-b6fd-a5af3bb28f50/">London</EasyLink></b> to help self-driving <EasyLink to="https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-1fmrojp_93d41eea.jpeg?region=0,0,400,225">cars</EasyLink> drive themselves better.
+  </span>),
+  (<span>
+    September 20, 2025 — Splinter Percussion @ <EasyLink to="https://www.waywardmusic.org/">Wayward Music Series.</EasyLink>
+  </span>),
+  (<span>
+    August 29, 2025 — Splinter Percussion @ <EasyLink to="https://www.livemusicproject.org/events/158451/live-music-project-11th-birthday-bash-feat-isabel-hagen">Live Music Project's 11th Anniversary</EasyLink>
   </span>),
   (<ProjectInfo
-    year={2024}
+    year={2025}
     month={'march'}
     title={'inconnu'}
     content={'electronic music collaboration between kmodp and Køemner.'}
