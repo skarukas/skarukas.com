@@ -11,6 +11,7 @@ import ProjectsPage from "./pages/Project"
 import WorksPage from "./pages/Works"
 import BirthYearPage from "./pages/BirthYear";
 import InProgressPage from "./pages/InProgress"
+import CollagesPage from "./pages/Collages";
 
 import NavigationBar from "./components/NavigationBar"
 import SocialContainer from "./components/SocialContainer"
@@ -27,7 +28,8 @@ const OTHER_ROUTABLE_PAGES = [
   WelcomePage,
   NewsPage,
   BirthYearPage,
-  InProgressPage
+  InProgressPage,
+  CollagesPage
 ]
 
 window.removeExternalParams = function () {
