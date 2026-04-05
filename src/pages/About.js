@@ -6,9 +6,11 @@ import Loader from "../components/Loader"
 import EasyLink from "../components/EasyLink";
 import WorksPage from "./Works";
 import ProjectsPage from "./Project";
+import routes from "../routes";
+import SEO from "../components/SEO";
 
 export default class AboutPage extends React.Component {
-  static PAGE_PATH = "/about"
+  static PAGE_PATH = routes.ABOUT
   static PAGE_NAME = "about"
   componentDidMount() {
     $('#about-page').fadeIn(1000)
@@ -38,6 +40,7 @@ export default class AboutPage extends React.Component {
     document.title = "Stephen Karukas - About"
     return (
       <div id="about-page">
+        <SEO page={AboutPage}/>
         <div className="bio-container">
           <div className="bio-image-container">
             <Loader style={{ zIndex: -1 }} />

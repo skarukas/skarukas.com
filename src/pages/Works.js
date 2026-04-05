@@ -7,11 +7,13 @@ import AudioPlayer from "../components/AudioPlayer";
 import worksData from "../data/works"
 import IFrameVideo from "../components/VideoPlayer"
 import "../style/Works.css"
+import routes from "../routes";
+import SEO from "../components/SEO";
 
 const WORK_ID = 'work-id'
 
 export default class WorksPage extends React.Component {
-  static PAGE_PATH = "/music"
+  static PAGE_PATH = routes.WORKS
   static PAGE_NAME = "compositions"
   state = {
     // Sort desc by year.
@@ -54,6 +56,7 @@ export default class WorksPage extends React.Component {
     if (!this.state.data) return this.props.fallback || null
     else return (
       <div id="works-page">
+        <SEO page={WorksPage}/>
         <h3 style={{ textAlign: "center", marginBottom: "5px" }}>☵ instrumental compositions</h3>
         <img className="centered-image" src="img/it-flows-performance.png" alt="It flows performance" />
         <SearchBar placeholder="Filter by keyword (ex: marimba)" />

@@ -5,6 +5,8 @@ import IFrameVideo from "../components/VideoPlayer";
 import "../style/InProgress.css"
 import "../style/About.css"
 import AudioPlayer from "../components/AudioPlayer";
+import routes from "../routes";
+import SEO from "../components/SEO";
 
 function ProjectIcon(props) {
     const size = 250
@@ -20,7 +22,7 @@ function ProjectIcon(props) {
 
 /* Display the list of projects */
 export default class InProgressPage extends React.Component {
-    static PAGE_PATH = "/wip"
+    static PAGE_PATH = routes.WIP
     static PAGE_NAME = "wip stuff"
     componentDidMount() {
         // Animate opening / closing of project dropdowns
@@ -52,6 +54,7 @@ export default class InProgressPage extends React.Component {
         ]
         return (
             <div id="in-progress-page">
+                <SEO page={InProgressPage}/>
                 <div style={{ textAlign: "center" }}>
                     <h3 >works in progress /::/ out of progress</h3>
                     <i style={{ opacity: 0.5 }}>Here are a few projects I'm either currently working on or put a lot of work

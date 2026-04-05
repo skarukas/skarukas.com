@@ -5,9 +5,11 @@ import SearchBar from "../components/SearchBar"
 import newsData from "../data/news"
 
 import "../style/News.css"
+import routes from "../routes"
+import SEO from "../components/SEO"
 
 export default class NewsPage extends React.Component {
-    static PAGE_PATH = "/news-archive"
+    static PAGE_PATH = routes.NEWS
     static PAGE_NAME = "news"
     componentDidMount() {
         if (window.getURLParam("news-id")) {
@@ -29,6 +31,7 @@ export default class NewsPage extends React.Component {
         let byDateDescending = (a, b) => (b.date.getTime() || 0) - (a.date.getTime() || 0)
         return (
             <div id="news-page">
+                <SEO page={NewsPage}/>
                 <SearchBar />
                 <div className="news-container">
                     {newsData.sort(byDateDescending).map((itemData, idx) => {

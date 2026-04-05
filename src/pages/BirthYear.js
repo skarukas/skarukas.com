@@ -1,14 +1,17 @@
 import React from "react";
 import "../style/About.css"
+import routes from "../routes";
+import SEO from "../components/SEO";
 
 export default class BirthYearPage extends React.Component {
-  static PAGE_PATH = "/birth-year"
+  static PAGE_PATH = routes.BIRTH_YEAR
   static PAGE_NAME = "birth-year"
 
   render() {
     document.title = "1997"
     return (
       <div id="birth-year-page" style={{ background: "white"}}>
+        <SEO page={BirthYearPage}/>
         <Gif src="weltrain.gif" />
         <div className="birth-year-container" style={{ backgroundImage: "url(img/gif/bkgd.webp)" }}>
           <div className="birth-year">

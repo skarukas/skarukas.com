@@ -1,6 +1,8 @@
 import React from "react"
 import $ from "jquery"
 import "../style/Collages.css"
+import routes from "../routes";
+import SEO from "../components/SEO";
 
 const EDITABLE_WHITEBOARD = "https://browserboard.com/whiteboard/XB9Qc5cNjFJvQEJoDSS9SF?key=My7u45Hj6JgiskgkA9EZCS";
 
@@ -10,7 +12,7 @@ let isMobile = false;
 
 /* Display the list of CS projects */
 export default class CollagesPage extends React.Component {
-  static PAGE_PATH = "/visual"
+  static PAGE_PATH = routes.VISUAL
   static PAGE_NAME = "visual"
 
   componentDidMount() {
@@ -26,6 +28,7 @@ export default class CollagesPage extends React.Component {
   render() {
     return (
       <div id="collage-page">
+        <SEO page={CollagesPage}/>
         <h3 style={{ textAlign: "center" }}>☴ strange collages I made</h3>
         <div className="collage-container">
           <CollageItem src="wash-your-ass.jpg" title="Wash Your Ass" />

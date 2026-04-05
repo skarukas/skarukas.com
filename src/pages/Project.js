@@ -2,13 +2,15 @@ import React from "react"
 import '../style/Project.css'
 import projectsData from "../data/tech-projects.js"
 import EasyLink from "../components/EasyLink"
+import routes from "../routes.js"
+import SEO from "../components/SEO.js"
 
 const githubIcon = "img/github-icon.png"
 const visitAppIcon = "img/open-link-icon.png"
 
 /* Display the list of CS projects */
 export default class ProjectsPage extends React.Component {
-  static PAGE_PATH = "/code"
+  static PAGE_PATH = routes.CODE
   static PAGE_NAME = "code"
   state = { data: projectsData }
 
@@ -17,6 +19,7 @@ export default class ProjectsPage extends React.Component {
     if (!this.state.data) return this.props.fallback || null
     else return (
       <div id="projects-page">
+        <SEO page={ProjectsPage}/>
         <h3 style={{ textAlign: "center", marginBottom: "5px" }}>☳ open-source code I wrote</h3>
         <p style={{ textAlign: "center", marginTop: "5px" }}>(mainly tools for microtonal music theory)</p>
         <div className="projects-page-container">

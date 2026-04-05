@@ -8,6 +8,8 @@ import AboutPage from "./About"
 import BirthYearPage from "./BirthYear"
 import IFrameVideo from "../components/VideoPlayer"
 import InProgressPage from "./InProgress"
+import routes from "../routes"
+import SEO from "../components/SEO"
 
 const WELCOME_INTRO = (
   <div>
@@ -19,7 +21,7 @@ const WELCOME_INTRO = (
 const WELCOME_SUBTITLE = "music + software"
 
 export default class WelcomePage extends React.Component {
-  static PAGE_PATH = "/"
+  static PAGE_PATH = routes.WELCOME
   static PAGE_NAME = "welcome"
   componentDidMount() {
     $('.welcome-content')
@@ -46,6 +48,7 @@ export default class WelcomePage extends React.Component {
     document.title = "Stephen Karukas"
     return (
       <div id="welcome-page">
+        <SEO page={WelcomePage}/>
         <div className="welcome-content">
           <div className="welcome-image-container">
             <img className="welcome-image image-selected" src="img/welcome-img/google.jpg" />
