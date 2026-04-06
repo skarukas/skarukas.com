@@ -34,6 +34,6 @@ export default class BirthYearPage extends React.Component {
 
 function Gif(props) {
   return (
-    <img className="gif" src={"img/gif/" + props.src} alt="gif" />
+    <img className="gif" src={"/img/gif/" + props.src} alt="gif" />
   )
 }

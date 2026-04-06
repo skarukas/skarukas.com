@@ -95,7 +95,7 @@ class NewsItem extends React.Component {
     }
 
     render() {
-        let iconImage = "img/expand-down-icon.png";
+        let iconImage = "/img/expand-down-icon.png";
         let data = this.props.data
         return (
             <div ref={this.containerElement} 

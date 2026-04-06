@@ -54,6 +54,6 @@ export default class CollagesPage extends React.Component {
 function CollageItem(props) {
   return (<div className="collage-image-container" >
     <span className="collage-title">{props.title}</span>
-    <img className="collage-image" src={"img/" + props.src} alt={props.src} />
+    <img className="collage-image" src={"/img/" + props.src} alt={props.src} />
   </div>)
 }

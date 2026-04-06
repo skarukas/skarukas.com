@@ -5,8 +5,8 @@ import EasyLink from "../components/EasyLink"
 import routes from "../routes.js"
 import SEO from "../components/SEO.js"
 
-const githubIcon = "img/github-icon.png"
-const visitAppIcon = "img/open-link-icon.png"
+const githubIcon = "/img/github-icon.png"
+const visitAppIcon = "/img/open-link-icon.png"
 
 /* Display the list of CS projects */
 export default class ProjectsPage extends React.Component {

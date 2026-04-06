@@ -8,7 +8,7 @@ export default function SearchBar(props) {
     let urlFilter = window.getURLParam("filter")
     return (
         <div className="search-bar-container">
-            <img src="img/search-icon.png" alt="Search icon"></img>
+            <img src="/img/search-icon.png" alt="Search icon"></img>
             <input type="text" 
                 className="search-bar"
                 placeholder={props.placeholder || "Filter by keyword..."}

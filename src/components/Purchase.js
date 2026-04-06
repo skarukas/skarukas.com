@@ -134,7 +134,7 @@ export default class PurchaseModal extends React.Component {
           <div className="purchase-container" onClick={e => e.stopPropagation()}>
             <a className="purchase-exit-button" title="Exit" onClick={() => this.hide()}>
               <img className="transparent-icon"
-                src="img/x-icon.png"
+                src="/img/x-icon.png"
                 alt="Close modal window">
               </img>
             </a>

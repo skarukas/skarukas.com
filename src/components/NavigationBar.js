@@ -35,7 +35,7 @@ export default class NavigationBar extends React.Component {
           {this.props.pages.map(page => <NavLink to={page.PAGE_PATH} exact activeClassName="navbar-selected" key={page.PAGE_NAME}>{page.PAGE_NAME}</NavLink>)}
         </div>
         <EasyLink to={WelcomePage.PAGE_PATH}>
-          <img id="home-icon" src="img/home-icon.png" alt="Home button" />
+          <img id="home-icon" src="/img/home-icon.png" alt="Home button" />
         </EasyLink>
         <span id="nav-title">stephen karukas</span>
       </div>

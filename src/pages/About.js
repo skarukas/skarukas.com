@@ -44,8 +44,8 @@ export default class AboutPage extends React.Component {
         <div className="bio-container">
           <div className="bio-image-container">
             <Loader style={{ zIndex: -1 }} />
-            <img className="bio-image light" src="img/about/about-pic-light-progressive.jpg" alt="Stephen Karukas existing on a couch" />
-            <img className="bio-image dark" src="img/about/about-pic-dark-progressive.jpg" alt="Stephen Karukas having an existential crisis on a couch" />
+            <img className="bio-image light" src="/img/about/about-pic-light-progressive.jpg" alt="Stephen Karukas existing on a couch" />
+            <img className="bio-image dark" src="/img/about/about-pic-dark-progressive.jpg" alt="Stephen Karukas having an existential crisis on a couch" />
           </div>
 
           <CombinedBio />
@@ -66,7 +66,7 @@ export default class AboutPage extends React.Component {
 
 
 /* Bio Sections */
-const hideIcon = <img className="transparent-icon click-hide" alt="Expand down icon" src="img/expand-down-icon.png" />
+const hideIcon = <img className="transparent-icon click-hide" alt="Expand down icon" src="/img/expand-down-icon.png" />
 
 function CombinedBio() {
   return (
@@ -159,7 +159,7 @@ function Microtonal() {
           graphical models ("networks") to harmonic analysis,
           and they generalize to microtonal music very well. For an application of
           a graph algorithm to adaptive tuning, check out
-          <EasyLink to="pdf/adaptive-tuning.pdf"> a short informal paper I wrote </EasyLink>
+          <EasyLink to="/pdf/adaptive-tuning.pdf"> a short informal paper I wrote </EasyLink>
           which includes some ideas about how a pitch set
           can be modeled as a weighted undirected graph, with the problem of
           adaptive just intonation being reduced to the generation
@@ -209,9 +209,9 @@ function Materials() {
       {hideIcon}
       <button>materials</button>
       <div className="about-section-content">
-        <PDF file="pdf/tech-resume.pdf" name="Tech Resume" />
-        <PDF file="pdf/composition-resume.pdf" name="Composition Resume" />
-        <PDF file="pdf/artist-statement.pdf" name="Composition Artist Statement" />
+        <PDF file="/pdf/tech-resume.pdf" name="Tech Resume" />
+        <PDF file="/pdf/composition-resume.pdf" name="Composition Resume" />
+        <PDF file="/pdf/artist-statement.pdf" name="Composition Artist Statement" />
       </div>
     </div>
   )

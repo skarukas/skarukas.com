@@ -58,7 +58,7 @@ export default class WorksPage extends React.Component {
       <div id="works-page">
         <SEO page={WorksPage}/>
         <h3 style={{ textAlign: "center", marginBottom: "5px" }}>☵ instrumental compositions</h3>
-        <img className="centered-image" src="img/it-flows-performance.png" alt="It flows performance" />
+        <img className="centered-image" src="/img/it-flows-performance.png" alt="It flows performance" />
         <SearchBar placeholder="Filter by keyword (ex: marimba)" />
         <PurchaseModal ref={this.modalRef} />
         <div className="work-container">
@@ -142,7 +142,7 @@ class Work extends React.Component {
     let work = this.state.work;
     if (!work.title) return null
 
-    let iconImage = "img/expand-down-icon.png"; /* ["expand-icon.png", "condense-icon.png"][+this.state.showDetails] */
+    let iconImage = "/img/expand-down-icon.png"; /* ["expand-icon.png", "condense-icon.png"][+this.state.showDetails] */
     let workYear = work.year ? (<span className="work-year">({work.year})</span>) : null
 
     return (
@@ -161,7 +161,7 @@ class Work extends React.Component {
         <div className="toggle-details">
           <img className="work-cover"
             alt={"Cover for " + work.title}
-            src={"img/covers/" + work.image}
+            src={"/img/covers/" + work.image}
             width="200"
             height="258"
           />
@@ -205,7 +205,7 @@ function AudioVideoPreview(props) {
     }
   }
   if (work.audio) {
-    children.push(<AudioPlayer src={"audio/" + work.audio} key="audioplayer" />)
+    children.push(<AudioPlayer src={"/audio/" + work.audio} key="audioplayer" />)
   }
   return (<div>{children}</div>)
 }

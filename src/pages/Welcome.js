@@ -51,12 +51,12 @@ export default class WelcomePage extends React.Component {
         <SEO page={WelcomePage}/>
         <div className="welcome-content">
           <div className="welcome-image-container">
-            <img className="welcome-image image-selected" src="img/welcome-img/google.jpg" />
-            <img className="welcome-image" src="img/welcome-img/google.jpg" />
-            <img className="welcome-image" src="img/welcome-img/crimee.png" />
-            <img className="welcome-image" src="img/welcome-img/it-flows.jpg" />
-            <img className="welcome-image" src="img/welcome-img/scriabin.jpg" />
-            <img className="welcome-image" src="img/lattice-story.png" />
+            <img className="welcome-image image-selected" src="/img/welcome-img/google.jpg" />
+            <img className="welcome-image" src="/img/welcome-img/google.jpg" />
+            <img className="welcome-image" src="/img/welcome-img/crimee.png" />
+            <img className="welcome-image" src="/img/welcome-img/it-flows.jpg" />
+            <img className="welcome-image" src="/img/welcome-img/scriabin.jpg" />
+            <img className="welcome-image" src="/img/lattice-story.png" />
           </div>
 
           <h3>stephen karukas</h3>
@@ -76,7 +76,7 @@ export default class WelcomePage extends React.Component {
             </div>
             <hr />
             <div className="arrow-image-container">
-              <img className="arrow-image" src="img/expand-down-icon.png" />
+              <img className="arrow-image" src="/img/expand-down-icon.png" />
             </div>
           </div>
         </div>

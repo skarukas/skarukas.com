@@ -52,7 +52,7 @@ window.getURLParams = function () {
 
 class App extends React.Component {
   componentDidMount() {
-    $("#background").css("background-image", 'url("img/site-background.jpg")');
+    $("#background").css("background-image", 'url("/img/site-background.jpg")');
   }
 
   render() {

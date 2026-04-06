@@ -63,7 +63,7 @@ const projectsData = [
 
 /* Replace image urls with urls relative to /public folder */
 for (let work of projectsData) {
-  work.image = "img/" + (work.image || "default-project.jpg")
+  work.image = "/img/" + (work.image || "default-project.jpg")
 }
 
 export default projectsData

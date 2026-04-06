@@ -7,7 +7,7 @@ import EasyLink from "../components/EasyLink"
 export default class EternalNothingness extends React.Component {
     componentDidMount() {
         let audio = new Audio()
-        audio.src = "audio/little-souls.mp3"
+        audio.src = "/audio/little-souls.mp3"
         audio.loop = true;
         audio.volume = 0.1;
         audio.load()

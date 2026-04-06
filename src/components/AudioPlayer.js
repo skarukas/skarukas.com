@@ -22,7 +22,7 @@ export default class AudioPlayer extends React.Component {
     render() {
         return (
             <audio controls ref={this.audioRef}>
-                <source src={this.props.src} type="audio/mp3"></source>
+                <source src={this.props.src} type="/audio/mp3"></source>
                 Audio unavailable.
             </audio>
         )

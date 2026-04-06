@@ -94,7 +94,7 @@ class InProgressProject extends React.Component {
 
 class DeathOfAFlower extends InProgressProject {
     static title = "☷ Traveling Boyfriend - Death of a Flower"
-    static src = "img/projects/death-of-a-flower/carrington_pastoral.jpg"
+    static src = "/img/projects/death-of-a-flower/carrington_pastoral.jpg"
     static id = "death-of-a-flower"
 
     content() {
@@ -110,18 +110,18 @@ class DeathOfAFlower extends InProgressProject {
                 flower of the summer drowning herself to allow winter to come. Here are some
                 demos, in various stages of development.
             </p>
-            <AudioSample src="audio/death-of-a-flower/girlhood-10-5-25.mp3" />
-            <AudioSample src="audio/death-of-a-flower/inside-a-summer-flower-10-18-25.mp3" />
-            <AudioSample src="audio/death-of-a-flower/cosmicomics-fish-song.mp3" />
-            <AudioSample src="audio/death-of-a-flower/wyrbtw-10-25-25.mp3" />
-            <AudioSample src="audio/death-of-a-flower/molds-pollens-worms.mp3" />
+            <AudioSample src="/audio/death-of-a-flower/girlhood-10-5-25.mp3" />
+            <AudioSample src="/audio/death-of-a-flower/inside-a-summer-flower-10-18-25.mp3" />
+            <AudioSample src="/audio/death-of-a-flower/cosmicomics-fish-song.mp3" />
+            <AudioSample src="/audio/death-of-a-flower/wyrbtw-10-25-25.mp3" />
+            <AudioSample src="/audio/death-of-a-flower/molds-pollens-worms.mp3" />
         </div>)
     }
 }
 
 class KiwiGame extends InProgressProject {
     static title = "☷ kiwi game"
-    static src = "img/projects/kiwi-game/kiwi.png"
+    static src = "/img/projects/kiwi-game/kiwi.png"
     static id = "kiwi-game"
     content() {
         return (<div>
@@ -138,24 +138,24 @@ class KiwiGame extends InProgressProject {
                 There's some character physics, very basic NPC and object interactions, some portals, a weather system,
                 and a camera system based on which room you're in, like Animal Well.
             </p>
-            <img src="img/projects/kiwi-game/bamboo.png" width="400" style={centeredImage} />
+            <img src="/img/projects/kiwi-game/bamboo.png" width="400" style={centeredImage} />
             <p>
                 I also threw together a pathfinding system where the agent simulates a series of actions against a copy of the world's physics.
                 Unfortunately it lags pretty heavily because it's very unoptimized and I wasn't able to get it to run
                 in a background thread.
             </p>
-            <img src="img/projects/kiwi-game/cattle-egret.png" width="400" style={centeredImage} />
+            <img src="/img/projects/kiwi-game/cattle-egret.png" width="400" style={centeredImage} />
             <p>
                 Anyway, I still don't know much about game development and I may never finish this, but it was fun to learn.
             </p>
-            <img src="img/projects/kiwi-game/kiwi.png" width="400" style={centeredImage} />
+            <img src="/img/projects/kiwi-game/kiwi.png" width="400" style={centeredImage} />
         </div>)
     }
 }
 
 class IntAudio extends InProgressProject {
     static title = "☲ intaudio"
-    static src = "img/projects/intaudio/intaudio-AM.png"
+    static src = "/img/projects/intaudio/intaudio-AM.png"
     static id = "intaudio"
     content() {
         return (<div>
@@ -180,7 +180,7 @@ class IntAudio extends InProgressProject {
             <p>
                 FM synthesis looks like this:
             </p>
-            <img src="img/projects/intaudio/intaudio-FM.png" width="400" style={centeredImage} />
+            <img src="/img/projects/intaudio/intaudio-FM.png" width="400" style={centeredImage} />
             <p>
                 You can even have a sine wave control the L/R balance of a signal:
                 <br />
@@ -189,16 +189,16 @@ class IntAudio extends InProgressProject {
                 </i>
             </p>
 
-            <img src="img/projects/intaudio/intaudio-lr-osc.png" width="550" style={centeredImage} />
+            <img src="/img/projects/intaudio/intaudio-lr-osc.png" width="550" style={centeredImage} />
             <p>
                 One more example, which I think is really cool--a custom echo effect where the delay value is controlled by an oscillator.
             </p>
-            <img src="img/projects/intaudio/intaudio-mod-delay.png" width="600" style={centeredImage} />
+            <img src="/img/projects/intaudio/intaudio-mod-delay.png" width="600" style={centeredImage} />
             <p>
                 The endgame / wishlist of this library would unify audio signals, "event-based" data (slider controls), and STFT data
                 seamlessly like the following:
             </p>
-            <img src="img/projects/intaudio/intaudio-fft-slider.png" width="500" style={centeredImage} />
+            <img src="/img/projects/intaudio/intaudio-fft-slider.png" width="500" style={centeredImage} />
             <p>
                 But this doesn't work yet!
             </p>
@@ -208,7 +208,7 @@ class IntAudio extends InProgressProject {
 
 class BellsAndMachines extends InProgressProject {
     static title = "☱ kmodp - broken machines"
-    static src = "img/projects/bells-and-machines/hard-drive-thresholded.png"
+    static src = "/img/projects/bells-and-machines/hard-drive-thresholded.png"
     static id = "broken-machines"
     content() {
         return (<div>
@@ -230,17 +230,17 @@ class BellsAndMachines extends InProgressProject {
                 while others are new tracks created in the same vein or from these bounces.
             </p>
             <hr />
-            <img src="img/projects/bells-and-machines/bells-and-machines-old-cover.jpg" width="400" style={centeredImage} />
-            <AudioSample src="audio/bells-and-machines/m-guit.mp3" />
-            <AudioSample src="audio/bells-and-machines/bell_loop_with_june.mp3" />
+            <img src="/img/projects/bells-and-machines/bells-and-machines-old-cover.jpg" width="400" style={centeredImage} />
+            <AudioSample src="/audio/bells-and-machines/m-guit.mp3" />
+            <AudioSample src="/audio/bells-and-machines/bell_loop_with_june.mp3" />
             <hr />
-            <img src="img/projects/bells-and-machines/kids_standing_near_wood_moody.jpg" width="400" style={centeredImage} />
-            <AudioSample src="audio/bells-and-machines/fulcrum-1-v1.mp3" />
-            <AudioSample src="audio/bells-and-machines/fulcrum-1-v2.mp3" />
-            <AudioSample src="audio/bells-and-machines/dark-fulcrum-2.mp3" />
-            <AudioSample src="audio/bells-and-machines/fulcrum-3.mp3" />
+            <img src="/img/projects/bells-and-machines/kids_standing_near_wood_moody.jpg" width="400" style={centeredImage} />
+            <AudioSample src="/audio/bells-and-machines/fulcrum-1-v1.mp3" />
+            <AudioSample src="/audio/bells-and-machines/fulcrum-1-v2.mp3" />
+            <AudioSample src="/audio/bells-and-machines/dark-fulcrum-2.mp3" />
+            <AudioSample src="/audio/bells-and-machines/fulcrum-3.mp3" />
             <hr />
-            <img src="img/projects/bells-and-machines/man-on-train.jpg" width="400" style={centeredImage} />
+            <img src="/img/projects/bells-and-machines/man-on-train.jpg" width="400" style={centeredImage} />
             <p>
                 I am experimenting with layering spoken voices for a few tracks, using samples from the
                 <EasyLink to="https://commonvoice.mozilla.org/en"> Mozilla Common Voice dataset </EasyLink>
@@ -254,25 +254,25 @@ class BellsAndMachines extends InProgressProject {
                 exhausted by social situations like holiday parties or family visits, I have memories
                 like this, being half-asleep in the corner of a room while people were talking around me.
             </p>
-            <AudioSample src="audio/bells-and-machines/dont-touch-me-4-19-25.mp3" />
-            <AudioSample src="audio/bells-and-machines/ssommeil-9-7-25.mp3" />
-            <AudioSample src="audio/bells-and-machines/anything-i-do.mp3" />
+            <AudioSample src="/audio/bells-and-machines/dont-touch-me-4-19-25.mp3" />
+            <AudioSample src="/audio/bells-and-machines/ssommeil-9-7-25.mp3" />
+            <AudioSample src="/audio/bells-and-machines/anything-i-do.mp3" />
             <hr />
-            <img src="img/projects/bells-and-machines/cubes.jpg" width="300" style={centeredImage} />
+            <img src="/img/projects/bells-and-machines/cubes.jpg" width="300" style={centeredImage} />
             <p>
                 I came up with a track called <i>zero-nine</i> consisting of repeating commands
                 from an audio speech commands dataset over a slow rhythmic backdrop made from sliced field recordings.
                 This was a full track, but unfortunately it was completely lost except for this
                 segment that I bounced at some point.
             </p>
-            <AudioSample src="audio/bells-and-machines/zero-nine.mp3" />
+            <AudioSample src="/audio/bells-and-machines/zero-nine.mp3" />
             <p>
                 I played around with these ideas in a few other unfinished tracks as well.
             </p>
-            <AudioSample src="audio/bells-and-machines/fast-loop.mp3" />
-            <AudioSample src="audio/bells-and-machines/tremble-plus-pécheur-9-7-25.mp3" />
+            <AudioSample src="/audio/bells-and-machines/fast-loop.mp3" />
+            <AudioSample src="/audio/bells-and-machines/tremble-plus-pécheur-9-7-25.mp3" />
             <hr />
-            <img src="img/projects/bells-and-machines/canning-machine.jpg" width="400" style={centeredImage} />
+            <img src="/img/projects/bells-and-machines/canning-machine.jpg" width="400" style={centeredImage} />
             <p>
                 This was going to be the last track on <i>bells and machines</i>, and I was able to
                 find an (almost) full bounce of it.
@@ -283,7 +283,7 @@ class BellsAndMachines extends InProgressProject {
                 meandering rhythms, I feel that these ideas could go on forever, satisfied with simply
                 chasing their own tails.
             </p>
-            <AudioSample src="audio/bells-and-machines/closing.mp3" />
+            <AudioSample src="/audio/bells-and-machines/closing.mp3" />
         </div >)
     }
 }

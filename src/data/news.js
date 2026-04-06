@@ -15,7 +15,7 @@ const newsData = [
     date: new Date(2020, 11, 1),
     content: (
       <div className={sutherlin2021.main}>
-        <img src="img/chamber-perc.jpg" alt="Background" className={sutherlin2021['background']}></img>
+        <img src="/img/chamber-perc.jpg" alt="Background" className={sutherlin2021['background']}></img>
         <div className={sutherlin2021.text}>
           <h4>The Project</h4>
           <p>
@@ -50,7 +50,7 @@ const newsData = [
     date: new Date(2021, 0, 13),
     content: (
       <div className={hutchens2021.main}>
-        <img src="img/hutchens-myers.jpg" alt="Background" className={hutchens2021['background']}></img>
+        <img src="/img/hutchens-myers.jpg" alt="Background" className={hutchens2021['background']}></img>
         <div className={hutchens2021.text}>
           <p>
             I have had the great fortune in the past to collaborate with <EasyLink to="https://www.andrew-hutchens.com/bio">Andrew Hutchens</EasyLink>,
@@ -66,7 +66,7 @@ const newsData = [
             different timbres of the ensemble.
           </p>
           <h5>Listen to selections from <em>It flows</em>:</h5>
-          <AudioPlayer src="audio/it-flows-preview.mp3" />
+          <AudioPlayer src="/audio/it-flows-preview.mp3" />
           <p>
             Though not a minimalist work by design, the sound palette of this piece will also take inspiration from the rhythmic
             complexities of the music of David Lang as well as some ensemble effects found in the works of Steve Reich, with some
@@ -111,7 +111,7 @@ const newsData = [
     tags: ['commission', 'music', 'solo', 'percussion', 'marimba'],
     content: (
       <div>
-        <img src="img/covers/redshift.jpg" alt="Redshift cover" className={redshift.cover}></img>
+        <img src="/img/covers/redshift.jpg" alt="Redshift cover" className={redshift.cover}></img>
         <div className={redshift.textContainer}>
           <p>
             I just finished a new work for solo marimba, <em>Redshift</em>, for a consortium
@@ -133,7 +133,7 @@ const newsData = [
           </ul>
           <p>Here's a preview of the piece:</p>
           <audio controls>
-            <source type="audio/mp3" src="audio/redshift-preview.mp3"></source>
+            <source type="/audio/mp3" src="/audio/redshift-preview.mp3"></source>
           </audio>
           <p>For more information, check it out on the <EasyLink to={WorksPage.PAGE_PATH + "?work-id=redshift"}>works page</EasyLink>.</p>
         </div>
