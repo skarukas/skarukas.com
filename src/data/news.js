@@ -133,7 +133,7 @@ const newsData = [
           </ul>
           <p>Here's a preview of the piece:</p>
           <audio controls>
-            <source type="/audio/mp3" src="/audio/redshift-preview.mp3"></source>
+            <source type="audio/mpeg" src="/audio/redshift-preview.mp3"></source>
           </audio>
           <p>For more information, check it out on the <EasyLink to={WorksPage.PAGE_PATH + "?work-id=redshift"}>works page</EasyLink>.</p>
         </div>
