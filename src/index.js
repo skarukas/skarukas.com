@@ -5,6 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HelmetProvider } from "react-helmet-async";
 
+// TODO: because react-snap (https://github.com/stereobooster/react-snap) was 
+// used to generate static files for each page, we are double-rendering the
+// webpage in certain contexts. Consider trying to get hydrate() to work 
+// properly again. It was previously not matching and throwing errors
+// (when using modern React renderNode / hydrateNode), and rendering *only* the 
+// improperly-formatted static pages (when using old ReactDOM.hydrate).
+ 
 ReactDOM.render(
   <React.StrictMode>
     <HelmetProvider>
